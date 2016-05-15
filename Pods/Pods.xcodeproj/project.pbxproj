@@ -1,0 +1,1018 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		004B7C4090F2E8C7FA981E8D5C77C6FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE933C177B51D675995E1F78BF38B789 /* Foundation.framework */; };
+		055C69D83D688EF850C5498B1FFF4D1C /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C23A7DD78D32CF18F0C5D53EE05CE736 /* IQBarButtonItem.m */; };
+		0B01BDCC104DB236BAEFEC98B38454B6 /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9CAE547067F6569AABCF724223D922 /* ChameleonConstants.m */; };
+		0B87A6820A0194B2DD360EA19E5C7C4B /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1698224510584DAEBC96699FAAACCF /* IQNSArray+Sort.m */; };
+		0E7B30324893B638D187A354BC8794BA /* SCLAlertView-Objective-C-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67FCA31C469D9803C73DD4D10A9FDACF /* SCLAlertView-Objective-C-dummy.m */; };
+		0FC694DFA1724814B8FD5B3AC1F8713D /* SCLTimerDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F54056A2B329C2B0808242DB2FF6E4E /* SCLTimerDisplay.h */; };
+		111462293D7E588FA20F708E0D5B5D0C /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = FEB548B00C73DDBCB2B7BC37B2B21F79 /* Chameleon_.h */; };
+		1209F0AB1742FDE1FEFADFEE330F3069 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25238AB21A2B74412E3DD4C0B8A17CFB /* IQUIView+Hierarchy.m */; };
+		12BA36CCA85D4C3722F841F643C43623 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA6A0F2BB825C3ED23B17ACC2EACDB5A /* AudioToolbox.framework */; };
+		1522FF9E8462011E9B1EDDA7570ADE4D /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 975657B639A417265F9343BB8E57B452 /* IQUIView+IQKeyboardToolbar.m */; };
+		15D178238C8E70AA7D3C0D7F7170B56E /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 767F4B1C1ED413297F74792BB7589258 /* UIAppearance+Swift.h */; };
+		18197D36C2143576697BBB5D81A488EF /* SCLTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B530EA32DF93D023C7A82CD4F49D6B /* SCLTextView.h */; };
+		19CE00369360C40469259D717ED2595B /* IQToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = A517B51758313B98E296D99E89A6EC12 /* IQToolbar.h */; };
+		1C5A1C960B60D1E885C520B1F2C1C2D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5626479447509B82A7CB010BD0A2CA /* CoreGraphics.framework */; };
+		2125F52C183BD076E42D3516D4C7F8B8 /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E942B941A80A714041B7A15344F0FD6A /* IQKeyboardManager.m */; };
+		25FD3F1EC958447650D13C0346CC04EC /* IQKeyboardManagerConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = EC6053755DFB8358D86FA7A1F1B607A4 /* IQKeyboardManagerConstants.h */; };
+		2781DFED9AF41BF78F7FE46250322433 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5872EDA1F740CAC01C556A7033C8745D /* UIViewController+Chameleon.m */; };
+		299B8B73BFCB59F4E5402CEC4B61B99C /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = D30AD7FBB0ED5E6CF925D1602CE6BDCE /* UIAppearance+Swift.m */; };
+		2BDC36EF5E371D6B46A855E0C9108DD3 /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = DDEEF43FACC5C5B61FDC0BA0EEBA89AE /* ChameleonEnums.h */; };
+		2EA840C011C1C407E1E7C1A14C201BE9 /* KeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F9A6443E71C74F7EA0F4B2302DB221 /* KeyboardManager.h */; };
+		344E6D3958D0B80F514D17B73CF4E082 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5626479447509B82A7CB010BD0A2CA /* CoreGraphics.framework */; };
+		3A68947BD6CC1DA410E6E84B1C2BDBBF /* IQUIWindow+Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E512DFFD1E5E773D8799ADADFBCAF0 /* IQUIWindow+Hierarchy.h */; };
+		3B12D9D131FCD059DAA52374A25CD79C /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 999A3188E3CF6F2F15C88FEDDC96B266 /* UIColor+ChameleonPrivate.h */; };
+		3DD387D6AAA68AA038342188CB237F04 /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = C9498574AE4B8F8B2F39437FD73D9A5F /* UIColor+Chameleon.h */; };
+		3E3F60D4411392470AC9930DD3389906 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB426AC65AE7B8058C4FB12C5C465CE0 /* QuartzCore.framework */; };
+		40B1B96CA7672F72B4F664230FF151D4 /* IQUIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69394E27CF493124BD88528C96C3F24E /* IQUIWindow+Hierarchy.m */; };
+		42177874C7816D9408416AF30E2ED284 /* IQKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E582B4D89AAA2A105AC72835638CAD04 /* IQKeyboardManager.h */; };
+		4292FB1E45FBBDD859AC16B7D185136E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8525CD8E3250627DED97DA6F5293591E /* UIKit.framework */; };
+		47131F17D2544540064DDBBC27C725E7 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C36765EA7F242F2CB2A2012D6ED5A /* UINavigationController+Chameleon.m */; };
+		472051E193E9F2B0BAFB71CDF9D7F9DB /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = C622AFC7463434DC95389CAC02D87EFC /* ChameleonMacros.h */; };
+		47E156796A4F0A0F35DD3318C342AB6A /* IQKeyboardManagerConstantsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4269B5124A9DA3162847A29C0F4E71F9 /* IQKeyboardManagerConstantsInternal.h */; };
+		47FD1252280E8095A5516DBBBEB514F0 /* IQUIViewController+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = C1732382AEAF2FBA50DDBFC6FE47D797 /* IQUIViewController+Additions.h */; };
+		48A766A0255D674CDEB2607F2968E04E /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 09109717A1F21C89912C6D37F3DD9D61 /* UINavigationController+Chameleon.h */; };
+		4A4556CF14D691EFCC76AE7CDC1AF876 /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2AD37DF452A468DED4F64BA4F3A791 /* IQUIScrollView+Additions.m */; };
+		4A5AC9387B3F2F323D21A0C6313B68F1 /* IQPreviousNextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 14AC84C016997C069923EA9CCDC17D7C /* IQPreviousNextView.h */; };
+		4F912434374EDC467411D6AB5DD0672D /* SCLAlertViewResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = B99B85B27F067B485F0C2E8C295167FB /* SCLAlertViewResponder.m */; };
+		5F44E66EFA7D2C10F738066DDC475627 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0C482A6496706B0C8BCA023840839 /* IQKeyboardReturnKeyHandler.m */; };
+		6189466A250448B76A4C9ABEA84084CC /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = B0E557DFF03A4D367EF6F9BF2970C30D /* Chameleon.h */; };
+		62E68ED016D76335CFC422A1325FCF7F /* SCLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4985D29D892A04D9116BBA303BF8031C /* SCLAlertView.m */; };
+		6485C74E41CF073129B4678F0B7A2D76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8525CD8E3250627DED97DA6F5293591E /* UIKit.framework */; };
+		64A947308A7A3B249B4726BF102DB669 /* SCLTimerDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D11597DD4C57738DA302B3FB7AB12C0 /* SCLTimerDisplay.m */; };
+		65DA19288B44E5262B4950197EF59336 /* IQBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C599A8EA627549273AF19D3729D4A94 /* IQBarButtonItem.h */; };
+		7002CFD8B14A6A5CED7F258A680E29A3 /* SCLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B2D3A7830B53EF91871287EC86AD63 /* SCLTextView.m */; };
+		78B05AF000CB43FD85EF72DDB71AE945 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = E7000BE4506B9DFF868F280477EFE149 /* NSArray+Chameleon.h */; };
+		7C7809C6118231295866652ED29E8887 /* Pods-InventoryManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 820177428F6BD7A24EA3E3347F113B60 /* Pods-InventoryManager-dummy.m */; };
+		7EDDBC7AF5A31C8F71D9D56D817D5F9E /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = C919FD06EE26DA6EA2E8ECAD401AD339 /* UIImage+ChameleonPrivate.m */; };
+		7F667DE789256822FFECA9D5FD7EB72E /* IQNSArray+Sort.h in Headers */ = {isa = PBXBuildFile; fileRef = 904AAD527411F0618BDAB0BBE3828E33 /* IQNSArray+Sort.h */; };
+		81E79FD611D04F9E7C321C0D5F5A05DA /* SCLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 56518309B60DB7DF9313661BE1BF8D2D /* SCLButton.m */; };
+		85F03D52FD176C13A36EE4F7DAA04522 /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0301999E6C5E46BEBF52EE6EA1FE27FC /* ChameleonFramework-dummy.m */; };
+		905AF5256ED6F8D4D6CD620659A641E8 /* IQKeyboardManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 226807B94FBDE971F700F3E96E94D351 /* IQKeyboardManager-dummy.m */; };
+		953AE3F3DAD423635399D29FD04F6D44 /* SCLAlertViewStyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC3D28DAA08837AC532D0B658E16074 /* SCLAlertViewStyleKit.m */; };
+		9B365DFC38CE5B50A36C12E3C535A424 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C18571B252701C5B5D1D75A1CDBDD3D /* UILabel+Chameleon.m */; };
+		9C7DF4859008E0D625728D4F95D35C11 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8525CD8E3250627DED97DA6F5293591E /* UIKit.framework */; };
+		9C7E1315730441EAC3A1DF2E245E79D4 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA0E57BFBFB5E9954134B29136BE63F /* UIView+ChameleonPrivate.m */; };
+		9D03A03B4C2836EA672B0ED20100FF58 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DDE2E755B82A80DBF56B66E6810F8E /* Chameleon_.m */; };
+		A025F8EA090C1F1808CF2750A23B370B /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FF370A38E8A7A554D6E20436C9BE8DD /* UIImage+ChameleonPrivate.h */; };
+		A118E3E1EAD2D731F0556E9E725B295F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A9A245A7FE55FFBD186DF8DDBDB15B /* Accelerate.framework */; };
+		A5CE5D8E33D1E043F03D88258A05C8DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE933C177B51D675995E1F78BF38B789 /* Foundation.framework */; };
+		A61F898948CF1E5E283518C6C5C9981D /* IQTitleBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 5778C30191749D09A6C602ED6E69A72D /* IQTitleBarButtonItem.h */; };
+		A7F2F84C31C49819279597F6FB5709EE /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9296DB630CA513BCEEB82D10E2921262 /* IQToolbar.m */; };
+		AB7EFF244D43BD444F61605C4A4D5517 /* IQKeyboardReturnKeyHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 79EF722AB38EC12F0E3B1A3E2902303F /* IQKeyboardReturnKeyHandler.h */; };
+		ACE7223AD8E23FA8F25E6CE0362365A1 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A4453D99BD5645295E25F451772A3626 /* UIImage+ImageEffects.m */; };
+		AE8B5792614817DE88C32E22FEF872D3 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D390EF8978BD0A770E647AB5069B2BB /* UIColor+ChameleonPrivate.m */; };
+		AFD3326AB12EE9B27E9975C923B5DEAB /* SCLAlertViewStyleKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6921BA559A784B7BFF14416B9D350242 /* SCLAlertViewStyleKit.h */; };
+		B4E57E2BD5A54487A2BCD2BEE78C55A7 /* SCLSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4B23B627C1A4CB8B4158BC989920AC /* SCLSwitchView.m */; };
+		B6D22B31E677C08A07AD330081BD5605 /* IQUIScrollView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D81EEE09FBA34532E9941B8081F14D /* IQUIScrollView+Additions.h */; };
+		B80EE4A0F6F5DA5717B9721BEB29E654 /* SCLMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D3F1393AEBA054D3A22ECF9F3568B279 /* SCLMacros.h */; };
+		B91895F62592C73C01351C35A5EE033A /* IQUITextFieldView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 94D57E1AC90CDA25D0732B5D29ED1C0E /* IQUITextFieldView+Additions.h */; };
+		BA667510C2D349102FEBBB3EA2E05DE4 /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFE923AD8853C7553264FC150E6E72D /* IQUIViewController+Additions.m */; };
+		BAFF946CF58971F1B4137C71199959C5 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A9BFAD0D5CF004CFE4BE6C56B47D82 /* NSArray+Chameleon.m */; };
+		BED4CFCEC353530B14EC6B470A2226F5 /* IQTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E8C604D1EE849EC4111D886F48580AA /* IQTextView.h */; };
+		BF41016C1FD383409F28054E64405E4B /* IQUIView+IQKeyboardToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 58D3066E319CE0BE636CE9AA96B1E37E /* IQUIView+IQKeyboardToolbar.h */; };
+		C16DDAB8D529A5E38F53F14EF4A7107F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5626479447509B82A7CB010BD0A2CA /* CoreGraphics.framework */; };
+		C178CC895ECD9DCFC314EC2E9E51BADF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE933C177B51D675995E1F78BF38B789 /* Foundation.framework */; };
+		C2BC3BB78324220C9462BEFF85E298FE /* IQUIView+Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F209E1F24332B4444FD2F88D2098101 /* IQUIView+Hierarchy.h */; };
+		C8D9A7E4036AAB935024CB6510DECB9D /* SCLButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A58D3D8ACFE2E717A04D7B7E1B4D5E7 /* SCLButton.h */; };
+		C9E26CD1663455BB128DFD958063D011 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C6EB570ACA1153C47D2CC1A7F69580 /* UIButton+Chameleon.m */; };
+		C9F5003EADA69EBCC696659AC207C629 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C1CF8588237A4663488E234789400D /* IQTextView.m */; };
+		CAE84929E2801636BB6D6A3BB81E03A5 /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = CE324096C46A52FC59212D503BFBF6D0 /* UIImage+ImageEffects.h */; };
+		CC7F149C12DB3961151920D10ED81434 /* SCLAlertViewResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8969B740B81D9D64F5ED927A02C645AF /* SCLAlertViewResponder.h */; };
+		CCA47346C566454E0CE745AA5D9E69C6 /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = A6DF99492FC7BD83CA9291679C90934E /* ChameleonConstants.h */; };
+		DF4B9282D701BA821945F72AE5A0DBC9 /* SCLAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = BDD51ACA8BE013E3766BFA24A5338816 /* SCLAlertView.h */; };
+		E528A2CDE79CEED70EB6461AB0DE31BD /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7158A907B7D1BBF4E1C0E4E3549DA518 /* UIView+ChameleonPrivate.h */; };
+		EB097A257376161AD0F0C0215CAF42C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE933C177B51D675995E1F78BF38B789 /* Foundation.framework */; };
+		ECFAF6DDC1EA0ADB61E0524ACF36592B /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E4BD5BD7D1253870A002E30BE4F679 /* IQPreviousNextView.m */; };
+		EEECA0EC98FE9B9A6F9A4C26E9064DE6 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA412F5D6F083C6EC81F39F3ACC1A3C3 /* IQUITextFieldView+Additions.m */; };
+		F51C3F765B39B2F210686FECE9648957 /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D29ECFF646A1B74DDAB2D001AE9307D /* UILabel+Chameleon.h */; };
+		F538ED7A7EE4E7224908AC904F306106 /* SCLSwitchView.h in Headers */ = {isa = PBXBuildFile; fileRef = B9FA8274E4B15AAD434D944F333355BD /* SCLSwitchView.h */; };
+		F5480681F789135D79D10FD4C5F9D1DF /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CD064E02B576040883E3EA115C9A18 /* UIViewController+Chameleon.h */; };
+		F99920734C26DDAE209B5E8BEEF049A9 /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A96CC17D1DFB2D5214050EC27B1C33B /* IQTitleBarButtonItem.m */; };
+		FC03992B2D1A72B06D802400FC5411BD /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 897BC87837C9B62C68A0689433639D24 /* UIButton+Chameleon.h */; };
+		FE440C39E939EB1F387E91609FC99C32 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C519F5AAEC730802601F58414A007 /* UIColor+Chameleon.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06A52604873C80A3ED52ACCEA167261D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8D2E5790BC762CD16D6E13B617A5BAC;
+			remoteInfo = ChameleonFramework;
+		};
+		520E31246EDAAFDF3E48404FE6127171 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46A833570EBAC79D6DD618D578C0F43C;
+			remoteInfo = IQKeyboardManager;
+		};
+		98EA6E1FE31476B0C573D48AEF60168D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8480B0667BDB5040F257E6BD618AE343;
+			remoteInfo = "SCLAlertView-Objective-C";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A9A245A7FE55FFBD186DF8DDBDB15B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		01D0F18AFD96383AB54113CB155DD09C /* libPods-InventoryManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InventoryManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E4BD5BD7D1253870A002E30BE4F679 /* IQPreviousNextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQPreviousNextView.m; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.m; sourceTree = "<group>"; };
+		02E512DFFD1E5E773D8799ADADFBCAF0 /* IQUIWindow+Hierarchy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIWindow+Hierarchy.h"; path = "IQKeyboardManager/Categories/IQUIWindow+Hierarchy.h"; sourceTree = "<group>"; };
+		0301999E6C5E46BEBF52EE6EA1FE27FC /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
+		09109717A1F21C89912C6D37F3DD9D61 /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
+		14AC84C016997C069923EA9CCDC17D7C /* IQPreviousNextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQPreviousNextView.h; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.h; sourceTree = "<group>"; };
+		1A86A8B30A96153A6F2DFDCB42D482B6 /* Pods-InventoryManager-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InventoryManager-acknowledgements.plist"; sourceTree = "<group>"; };
+		1CA0E57BFBFB5E9954134B29136BE63F /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		20C1CF8588237A4663488E234789400D /* IQTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTextView.m; path = IQKeyboardManager/IQTextView/IQTextView.m; sourceTree = "<group>"; };
+		226807B94FBDE971F700F3E96E94D351 /* IQKeyboardManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManager-dummy.m"; sourceTree = "<group>"; };
+		25238AB21A2B74412E3DD4C0B8A17CFB /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+Hierarchy.m"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		3C043FDA9405063771060B0752A3A8B2 /* Pods-InventoryManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InventoryManager.debug.xcconfig"; sourceTree = "<group>"; };
+		4269B5124A9DA3162847A29C0F4E71F9 /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstantsInternal.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
+		4985D29D892A04D9116BBA303BF8031C /* SCLAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLAlertView.m; path = SCLAlertView/SCLAlertView.m; sourceTree = "<group>"; };
+		4D11597DD4C57738DA302B3FB7AB12C0 /* SCLTimerDisplay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLTimerDisplay.m; path = SCLAlertView/SCLTimerDisplay.m; sourceTree = "<group>"; };
+		52CD064E02B576040883E3EA115C9A18 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		56518309B60DB7DF9313661BE1BF8D2D /* SCLButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLButton.m; path = SCLAlertView/SCLButton.m; sourceTree = "<group>"; };
+		5778C30191749D09A6C602ED6E69A72D /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTitleBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.h; sourceTree = "<group>"; };
+		5872EDA1F740CAC01C556A7033C8745D /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		58D3066E319CE0BE636CE9AA96B1E37E /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+IQKeyboardToolbar.h"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
+		5AF24A3C3618C639848B47184CC36B01 /* libIQKeyboardManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIQKeyboardManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C18571B252701C5B5D1D75A1CDBDD3D /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
+		5F209E1F24332B4444FD2F88D2098101 /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+Hierarchy.h"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
+		60A9BFAD0D5CF004CFE4BE6C56B47D82 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		626980FBCD1E61457263E2BA78C27094 /* SCLAlertView-Objective-C.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SCLAlertView-Objective-C.xcconfig"; sourceTree = "<group>"; };
+		64DDE2E755B82A80DBF56B66E6810F8E /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
+		67B2D3A7830B53EF91871287EC86AD63 /* SCLTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLTextView.m; path = SCLAlertView/SCLTextView.m; sourceTree = "<group>"; };
+		67FCA31C469D9803C73DD4D10A9FDACF /* SCLAlertView-Objective-C-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-Objective-C-dummy.m"; sourceTree = "<group>"; };
+		68C0C482A6496706B0C8BCA023840839 /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardReturnKeyHandler.m; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
+		6921BA559A784B7BFF14416B9D350242 /* SCLAlertViewStyleKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLAlertViewStyleKit.h; path = SCLAlertView/SCLAlertViewStyleKit.h; sourceTree = "<group>"; };
+		69394E27CF493124BD88528C96C3F24E /* IQUIWindow+Hierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIWindow+Hierarchy.m"; path = "IQKeyboardManager/Categories/IQUIWindow+Hierarchy.m"; sourceTree = "<group>"; };
+		6C599A8EA627549273AF19D3729D4A94 /* IQBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.h; sourceTree = "<group>"; };
+		6D29ECFF646A1B74DDAB2D001AE9307D /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
+		6D390EF8978BD0A770E647AB5069B2BB /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		6EE021B4A187904DC318486DFD830B92 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManager/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		6F54056A2B329C2B0808242DB2FF6E4E /* SCLTimerDisplay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLTimerDisplay.h; path = SCLAlertView/SCLTimerDisplay.h; sourceTree = "<group>"; };
+		7158A907B7D1BBF4E1C0E4E3549DA518 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		71C6EB570ACA1153C47D2CC1A7F69580 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		767F4B1C1ED413297F74792BB7589258 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
+		79EF722AB38EC12F0E3B1A3E2902303F /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardReturnKeyHandler.h; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
+		7A2AF728781D9B95D72C30824E3FC368 /* libChameleonFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libChameleonFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A58D3D8ACFE2E717A04D7B7E1B4D5E7 /* SCLButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLButton.h; path = SCLAlertView/SCLButton.h; sourceTree = "<group>"; };
+		7B4B23B627C1A4CB8B4158BC989920AC /* SCLSwitchView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLSwitchView.m; path = SCLAlertView/SCLSwitchView.m; sourceTree = "<group>"; };
+		7FF370A38E8A7A554D6E20436C9BE8DD /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		806C519F5AAEC730802601F58414A007 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		820177428F6BD7A24EA3E3347F113B60 /* Pods-InventoryManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InventoryManager-dummy.m"; sourceTree = "<group>"; };
+		8525CD8E3250627DED97DA6F5293591E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		87A071ACD6B16B737D54A39E5247F50B /* Pods-InventoryManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InventoryManager.release.xcconfig"; sourceTree = "<group>"; };
+		87F9A6443E71C74F7EA0F4B2302DB221 /* KeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KeyboardManager.h; path = IQKeyboardManager/KeyboardManager.h; sourceTree = "<group>"; };
+		8969B740B81D9D64F5ED927A02C645AF /* SCLAlertViewResponder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLAlertViewResponder.h; path = SCLAlertView/SCLAlertViewResponder.h; sourceTree = "<group>"; };
+		897BC87837C9B62C68A0689433639D24 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
+		8A96CC17D1DFB2D5214050EC27B1C33B /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTitleBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.m; sourceTree = "<group>"; };
+		8E8C604D1EE849EC4111D886F48580AA /* IQTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTextView.h; path = IQKeyboardManager/IQTextView/IQTextView.h; sourceTree = "<group>"; };
+		904AAD527411F0618BDAB0BBE3828E33 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQNSArray+Sort.h"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.h"; sourceTree = "<group>"; };
+		9296DB630CA513BCEEB82D10E2921262 /* IQToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQToolbar.m; path = IQKeyboardManager/IQToolbar/IQToolbar.m; sourceTree = "<group>"; };
+		94D57E1AC90CDA25D0732B5D29ED1C0E /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUITextFieldView+Additions.h"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
+		975657B639A417265F9343BB8E57B452 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+IQKeyboardToolbar.m"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
+		999A3188E3CF6F2F15C88FEDDC96B266 /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		9D5626479447509B82A7CB010BD0A2CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		A38C36765EA7F242F2CB2A2012D6ED5A /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
+		A4453D99BD5645295E25F451772A3626 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "SCLAlertView/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		A517B51758313B98E296D99E89A6EC12 /* IQToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQToolbar.h; path = IQKeyboardManager/IQToolbar/IQToolbar.h; sourceTree = "<group>"; };
+		A5D4EECC32FB39FC438FE904D54FDC40 /* libSCLAlertView-Objective-C.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libSCLAlertView-Objective-C.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6DF99492FC7BD83CA9291679C90934E /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
+		A723D88F96E0500F7F5FC518D540908B /* Pods-InventoryManager-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InventoryManager-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A803D18E45D30D412B54100AAF0F4E8F /* IQKeyboardManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManager.xcconfig; sourceTree = "<group>"; };
+		AB426AC65AE7B8058C4FB12C5C465CE0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		B0E557DFF03A4D367EF6F9BF2970C30D /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
+		B63FB1B09BFE6ABF7D977746BC457D49 /* SCLAlertView-Objective-C-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SCLAlertView-Objective-C-Private.xcconfig"; sourceTree = "<group>"; };
+		B99B85B27F067B485F0C2E8C295167FB /* SCLAlertViewResponder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLAlertViewResponder.m; path = SCLAlertView/SCLAlertViewResponder.m; sourceTree = "<group>"; };
+		B9FA8274E4B15AAD434D944F333355BD /* SCLSwitchView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLSwitchView.h; path = SCLAlertView/SCLSwitchView.h; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BBAE167345EA063D995D9269425F3E6F /* ChameleonFramework-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ChameleonFramework-Private.xcconfig"; sourceTree = "<group>"; };
+		BDD51ACA8BE013E3766BFA24A5338816 /* SCLAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLAlertView.h; path = SCLAlertView/SCLAlertView.h; sourceTree = "<group>"; };
+		C1732382AEAF2FBA50DDBFC6FE47D797 /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIViewController+Additions.h"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.h"; sourceTree = "<group>"; };
+		C23A7DD78D32CF18F0C5D53EE05CE736 /* IQBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.m; sourceTree = "<group>"; };
+		C622AFC7463434DC95389CAC02D87EFC /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
+		C919FD06EE26DA6EA2E8ECAD401AD339 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		C9498574AE4B8F8B2F39437FD73D9A5F /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		CD7D613F360931F189E0546A5AA61BB7 /* SCLAlertView-Objective-C-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-Objective-C-prefix.pch"; sourceTree = "<group>"; };
+		CDFE923AD8853C7553264FC150E6E72D /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIViewController+Additions.m"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.m"; sourceTree = "<group>"; };
+		CE324096C46A52FC59212D503BFBF6D0 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "SCLAlertView/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		D2B530EA32DF93D023C7A82CD4F49D6B /* SCLTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLTextView.h; path = SCLAlertView/SCLTextView.h; sourceTree = "<group>"; };
+		D30AD7FBB0ED5E6CF925D1602CE6BDCE /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
+		D3F1393AEBA054D3A22ECF9F3568B279 /* SCLMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLMacros.h; path = SCLAlertView/SCLMacros.h; sourceTree = "<group>"; };
+		DA412F5D6F083C6EC81F39F3ACC1A3C3 /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUITextFieldView+Additions.m"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
+		DBC3D28DAA08837AC532D0B658E16074 /* SCLAlertViewStyleKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLAlertViewStyleKit.m; path = SCLAlertView/SCLAlertViewStyleKit.m; sourceTree = "<group>"; };
+		DDEEF43FACC5C5B61FDC0BA0EEBA89AE /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
+		DE598DD010ABC4E941BEA881A3A9CDCC /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
+		DE933C177B51D675995E1F78BF38B789 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E1D81EEE09FBA34532E9941B8081F14D /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIScrollView+Additions.h"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
+		E43C522EF60E54A3D08B853AE480F665 /* Pods-InventoryManager-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InventoryManager-resources.sh"; sourceTree = "<group>"; };
+		E582B4D89AAA2A105AC72835638CAD04 /* IQKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManager.h; path = IQKeyboardManager/IQKeyboardManager.h; sourceTree = "<group>"; };
+		E654AB4E564FEDE6885A3053487417EC /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
+		E7000BE4506B9DFF868F280477EFE149 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		E942B941A80A714041B7A15344F0FD6A /* IQKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardManager.m; path = IQKeyboardManager/IQKeyboardManager.m; sourceTree = "<group>"; };
+		E9C2722CCC8CC46B1DA3CC16C5BB3B69 /* IQKeyboardManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-prefix.pch"; sourceTree = "<group>"; };
+		EA6A0F2BB825C3ED23B17ACC2EACDB5A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		EC6053755DFB8358D86FA7A1F1B607A4 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstants.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
+		EC9CAE547067F6569AABCF724223D922 /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
+		ED1698224510584DAEBC96699FAAACCF /* IQNSArray+Sort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQNSArray+Sort.m"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		EF2AD37DF452A468DED4F64BA4F3A791 /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIScrollView+Additions.m"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
+		FADC4CDCCDF0349E660BF25CDF408A5A /* IQKeyboardManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "IQKeyboardManager-Private.xcconfig"; sourceTree = "<group>"; };
+		FEB548B00C73DDBCB2B7BC37B2B21F79 /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54F868A1321AA9A39214BBD47FF3F211 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A118E3E1EAD2D731F0556E9E725B295F /* Accelerate.framework in Frameworks */,
+				12BA36CCA85D4C3722F841F643C43623 /* AudioToolbox.framework in Frameworks */,
+				1C5A1C960B60D1E885C520B1F2C1C2D2 /* CoreGraphics.framework in Frameworks */,
+				EB097A257376161AD0F0C0215CAF42C6 /* Foundation.framework in Frameworks */,
+				9C7DF4859008E0D625728D4F95D35C11 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59593531A5A5EE076888A85AB0F891CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CE5D8E33D1E043F03D88258A05C8DC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954817E0F6C4E80F8E7C48082A374A3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16DDAB8D529A5E38F53F14EF4A7107F /* CoreGraphics.framework in Frameworks */,
+				C178CC895ECD9DCFC314EC2E9E51BADF /* Foundation.framework in Frameworks */,
+				6485C74E41CF073129B4678F0B7A2D76 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC97A9D85F0A91F3C1D56BF1A3CB86A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344E6D3958D0B80F514D17B73CF4E082 /* CoreGraphics.framework in Frameworks */,
+				004B7C4090F2E8C7FA981E8D5C77C6FF /* Foundation.framework in Frameworks */,
+				3E3F60D4411392470AC9930DD3389906 /* QuartzCore.framework in Frameworks */,
+				4292FB1E45FBBDD859AC16B7D185136E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4EDB47C5241CEBF19A274C1B0A0E3C8 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FD9E343CAEC15F2D150A536312484DF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A803D18E45D30D412B54100AAF0F4E8F /* IQKeyboardManager.xcconfig */,
+				FADC4CDCCDF0349E660BF25CDF408A5A /* IQKeyboardManager-Private.xcconfig */,
+				226807B94FBDE971F700F3E96E94D351 /* IQKeyboardManager-dummy.m */,
+				E9C2722CCC8CC46B1DA3CC16C5BB3B69 /* IQKeyboardManager-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IQKeyboardManager";
+			sourceTree = "<group>";
+		};
+		2ACFD1700975BF351DC2B0ADA639C953 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F219FC5107141BC2EE719D690A23507C /* ChameleonFramework */,
+				AA8156D724C9B294D7598B6199C460DB /* IQKeyboardManager */,
+				FB3EF294D0F4A12276A4CC4BA0DF109F /* SCLAlertView-Objective-C */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DA51154CFE2EEF5FC457C881AE6ECBB /* Pods-InventoryManager */ = {
+			isa = PBXGroup;
+			children = (
+				A723D88F96E0500F7F5FC518D540908B /* Pods-InventoryManager-acknowledgements.markdown */,
+				1A86A8B30A96153A6F2DFDCB42D482B6 /* Pods-InventoryManager-acknowledgements.plist */,
+				820177428F6BD7A24EA3E3347F113B60 /* Pods-InventoryManager-dummy.m */,
+				E43C522EF60E54A3D08B853AE480F665 /* Pods-InventoryManager-resources.sh */,
+				3C043FDA9405063771060B0752A3A8B2 /* Pods-InventoryManager.debug.xcconfig */,
+				87A071ACD6B16B737D54A39E5247F50B /* Pods-InventoryManager.release.xcconfig */,
+			);
+			name = "Pods-InventoryManager";
+			path = "Target Support Files/Pods-InventoryManager";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
+				2ACFD1700975BF351DC2B0ADA639C953 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				A549C3AEA954EB7FA9E82A134932498D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9598B3189F42ED3F990BB7F57AADA8EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6EE021B4A187904DC318486DFD830B92 /* IQKeyboardManager.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9BB038C04411F4DBAFDB68CCAD9C340F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				626980FBCD1E61457263E2BA78C27094 /* SCLAlertView-Objective-C.xcconfig */,
+				B63FB1B09BFE6ABF7D977746BC457D49 /* SCLAlertView-Objective-C-Private.xcconfig */,
+				67FCA31C469D9803C73DD4D10A9FDACF /* SCLAlertView-Objective-C-dummy.m */,
+				CD7D613F360931F189E0546A5AA61BB7 /* SCLAlertView-Objective-C-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SCLAlertView-Objective-C";
+			sourceTree = "<group>";
+		};
+		A549C3AEA954EB7FA9E82A134932498D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DA51154CFE2EEF5FC457C881AE6ECBB /* Pods-InventoryManager */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AA8156D724C9B294D7598B6199C460DB /* IQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				6C599A8EA627549273AF19D3729D4A94 /* IQBarButtonItem.h */,
+				C23A7DD78D32CF18F0C5D53EE05CE736 /* IQBarButtonItem.m */,
+				E582B4D89AAA2A105AC72835638CAD04 /* IQKeyboardManager.h */,
+				E942B941A80A714041B7A15344F0FD6A /* IQKeyboardManager.m */,
+				EC6053755DFB8358D86FA7A1F1B607A4 /* IQKeyboardManagerConstants.h */,
+				4269B5124A9DA3162847A29C0F4E71F9 /* IQKeyboardManagerConstantsInternal.h */,
+				79EF722AB38EC12F0E3B1A3E2902303F /* IQKeyboardReturnKeyHandler.h */,
+				68C0C482A6496706B0C8BCA023840839 /* IQKeyboardReturnKeyHandler.m */,
+				904AAD527411F0618BDAB0BBE3828E33 /* IQNSArray+Sort.h */,
+				ED1698224510584DAEBC96699FAAACCF /* IQNSArray+Sort.m */,
+				14AC84C016997C069923EA9CCDC17D7C /* IQPreviousNextView.h */,
+				02E4BD5BD7D1253870A002E30BE4F679 /* IQPreviousNextView.m */,
+				8E8C604D1EE849EC4111D886F48580AA /* IQTextView.h */,
+				20C1CF8588237A4663488E234789400D /* IQTextView.m */,
+				5778C30191749D09A6C602ED6E69A72D /* IQTitleBarButtonItem.h */,
+				8A96CC17D1DFB2D5214050EC27B1C33B /* IQTitleBarButtonItem.m */,
+				A517B51758313B98E296D99E89A6EC12 /* IQToolbar.h */,
+				9296DB630CA513BCEEB82D10E2921262 /* IQToolbar.m */,
+				E1D81EEE09FBA34532E9941B8081F14D /* IQUIScrollView+Additions.h */,
+				EF2AD37DF452A468DED4F64BA4F3A791 /* IQUIScrollView+Additions.m */,
+				94D57E1AC90CDA25D0732B5D29ED1C0E /* IQUITextFieldView+Additions.h */,
+				DA412F5D6F083C6EC81F39F3ACC1A3C3 /* IQUITextFieldView+Additions.m */,
+				5F209E1F24332B4444FD2F88D2098101 /* IQUIView+Hierarchy.h */,
+				25238AB21A2B74412E3DD4C0B8A17CFB /* IQUIView+Hierarchy.m */,
+				58D3066E319CE0BE636CE9AA96B1E37E /* IQUIView+IQKeyboardToolbar.h */,
+				975657B639A417265F9343BB8E57B452 /* IQUIView+IQKeyboardToolbar.m */,
+				C1732382AEAF2FBA50DDBFC6FE47D797 /* IQUIViewController+Additions.h */,
+				CDFE923AD8853C7553264FC150E6E72D /* IQUIViewController+Additions.m */,
+				02E512DFFD1E5E773D8799ADADFBCAF0 /* IQUIWindow+Hierarchy.h */,
+				69394E27CF493124BD88528C96C3F24E /* IQUIWindow+Hierarchy.m */,
+				87F9A6443E71C74F7EA0F4B2302DB221 /* KeyboardManager.h */,
+				9598B3189F42ED3F990BB7F57AADA8EE /* Resources */,
+				1FD9E343CAEC15F2D150A536312484DF /* Support Files */,
+			);
+			path = IQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		C4EDB47C5241CEBF19A274C1B0A0E3C8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				00A9A245A7FE55FFBD186DF8DDBDB15B /* Accelerate.framework */,
+				EA6A0F2BB825C3ED23B17ACC2EACDB5A /* AudioToolbox.framework */,
+				9D5626479447509B82A7CB010BD0A2CA /* CoreGraphics.framework */,
+				DE933C177B51D675995E1F78BF38B789 /* Foundation.framework */,
+				AB426AC65AE7B8058C4FB12C5C465CE0 /* QuartzCore.framework */,
+				8525CD8E3250627DED97DA6F5293591E /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CAEBA459784710BC56192052C7BF1E06 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				B0E557DFF03A4D367EF6F9BF2970C30D /* Chameleon.h */,
+				A6DF99492FC7BD83CA9291679C90934E /* ChameleonConstants.h */,
+				EC9CAE547067F6569AABCF724223D922 /* ChameleonConstants.m */,
+				DDEEF43FACC5C5B61FDC0BA0EEBA89AE /* ChameleonEnums.h */,
+				C622AFC7463434DC95389CAC02D87EFC /* ChameleonMacros.h */,
+				FEB548B00C73DDBCB2B7BC37B2B21F79 /* Chameleon_.h */,
+				64DDE2E755B82A80DBF56B66E6810F8E /* Chameleon_.m */,
+				E7000BE4506B9DFF868F280477EFE149 /* NSArray+Chameleon.h */,
+				60A9BFAD0D5CF004CFE4BE6C56B47D82 /* NSArray+Chameleon.m */,
+				767F4B1C1ED413297F74792BB7589258 /* UIAppearance+Swift.h */,
+				D30AD7FBB0ED5E6CF925D1602CE6BDCE /* UIAppearance+Swift.m */,
+				897BC87837C9B62C68A0689433639D24 /* UIButton+Chameleon.h */,
+				71C6EB570ACA1153C47D2CC1A7F69580 /* UIButton+Chameleon.m */,
+				C9498574AE4B8F8B2F39437FD73D9A5F /* UIColor+Chameleon.h */,
+				806C519F5AAEC730802601F58414A007 /* UIColor+Chameleon.m */,
+				999A3188E3CF6F2F15C88FEDDC96B266 /* UIColor+ChameleonPrivate.h */,
+				6D390EF8978BD0A770E647AB5069B2BB /* UIColor+ChameleonPrivate.m */,
+				7FF370A38E8A7A554D6E20436C9BE8DD /* UIImage+ChameleonPrivate.h */,
+				C919FD06EE26DA6EA2E8ECAD401AD339 /* UIImage+ChameleonPrivate.m */,
+				6D29ECFF646A1B74DDAB2D001AE9307D /* UILabel+Chameleon.h */,
+				5C18571B252701C5B5D1D75A1CDBDD3D /* UILabel+Chameleon.m */,
+				09109717A1F21C89912C6D37F3DD9D61 /* UINavigationController+Chameleon.h */,
+				A38C36765EA7F242F2CB2A2012D6ED5A /* UINavigationController+Chameleon.m */,
+				7158A907B7D1BBF4E1C0E4E3549DA518 /* UIView+ChameleonPrivate.h */,
+				1CA0E57BFBFB5E9954134B29136BE63F /* UIView+ChameleonPrivate.m */,
+				52CD064E02B576040883E3EA115C9A18 /* UIViewController+Chameleon.h */,
+				5872EDA1F740CAC01C556A7033C8745D /* UIViewController+Chameleon.m */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A2AF728781D9B95D72C30824E3FC368 /* libChameleonFramework.a */,
+				5AF24A3C3618C639848B47184CC36B01 /* libIQKeyboardManager.a */,
+				01D0F18AFD96383AB54113CB155DD09C /* libPods-InventoryManager.a */,
+				A5D4EECC32FB39FC438FE904D54FDC40 /* libSCLAlertView-Objective-C.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAD5800360646AC1A7861CC6EC9FA002 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E654AB4E564FEDE6885A3053487417EC /* ChameleonFramework.xcconfig */,
+				BBAE167345EA063D995D9269425F3E6F /* ChameleonFramework-Private.xcconfig */,
+				0301999E6C5E46BEBF52EE6EA1FE27FC /* ChameleonFramework-dummy.m */,
+				DE598DD010ABC4E941BEA881A3A9CDCC /* ChameleonFramework-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ChameleonFramework";
+			sourceTree = "<group>";
+		};
+		F219FC5107141BC2EE719D690A23507C /* ChameleonFramework */ = {
+			isa = PBXGroup;
+			children = (
+				CAEBA459784710BC56192052C7BF1E06 /* Default */,
+				EAD5800360646AC1A7861CC6EC9FA002 /* Support Files */,
+			);
+			path = ChameleonFramework;
+			sourceTree = "<group>";
+		};
+		FB3EF294D0F4A12276A4CC4BA0DF109F /* SCLAlertView-Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				BDD51ACA8BE013E3766BFA24A5338816 /* SCLAlertView.h */,
+				4985D29D892A04D9116BBA303BF8031C /* SCLAlertView.m */,
+				8969B740B81D9D64F5ED927A02C645AF /* SCLAlertViewResponder.h */,
+				B99B85B27F067B485F0C2E8C295167FB /* SCLAlertViewResponder.m */,
+				6921BA559A784B7BFF14416B9D350242 /* SCLAlertViewStyleKit.h */,
+				DBC3D28DAA08837AC532D0B658E16074 /* SCLAlertViewStyleKit.m */,
+				7A58D3D8ACFE2E717A04D7B7E1B4D5E7 /* SCLButton.h */,
+				56518309B60DB7DF9313661BE1BF8D2D /* SCLButton.m */,
+				D3F1393AEBA054D3A22ECF9F3568B279 /* SCLMacros.h */,
+				B9FA8274E4B15AAD434D944F333355BD /* SCLSwitchView.h */,
+				7B4B23B627C1A4CB8B4158BC989920AC /* SCLSwitchView.m */,
+				D2B530EA32DF93D023C7A82CD4F49D6B /* SCLTextView.h */,
+				67B2D3A7830B53EF91871287EC86AD63 /* SCLTextView.m */,
+				6F54056A2B329C2B0808242DB2FF6E4E /* SCLTimerDisplay.h */,
+				4D11597DD4C57738DA302B3FB7AB12C0 /* SCLTimerDisplay.m */,
+				CE324096C46A52FC59212D503BFBF6D0 /* UIImage+ImageEffects.h */,
+				A4453D99BD5645295E25F451772A3626 /* UIImage+ImageEffects.m */,
+				9BB038C04411F4DBAFDB68CCAD9C340F /* Support Files */,
+			);
+			path = "SCLAlertView-Objective-C";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		76E4410D51A94F9498F846072EABCBE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DA19288B44E5262B4950197EF59336 /* IQBarButtonItem.h in Headers */,
+				42177874C7816D9408416AF30E2ED284 /* IQKeyboardManager.h in Headers */,
+				25FD3F1EC958447650D13C0346CC04EC /* IQKeyboardManagerConstants.h in Headers */,
+				47E156796A4F0A0F35DD3318C342AB6A /* IQKeyboardManagerConstantsInternal.h in Headers */,
+				AB7EFF244D43BD444F61605C4A4D5517 /* IQKeyboardReturnKeyHandler.h in Headers */,
+				7F667DE789256822FFECA9D5FD7EB72E /* IQNSArray+Sort.h in Headers */,
+				4A5AC9387B3F2F323D21A0C6313B68F1 /* IQPreviousNextView.h in Headers */,
+				BED4CFCEC353530B14EC6B470A2226F5 /* IQTextView.h in Headers */,
+				A61F898948CF1E5E283518C6C5C9981D /* IQTitleBarButtonItem.h in Headers */,
+				19CE00369360C40469259D717ED2595B /* IQToolbar.h in Headers */,
+				B6D22B31E677C08A07AD330081BD5605 /* IQUIScrollView+Additions.h in Headers */,
+				B91895F62592C73C01351C35A5EE033A /* IQUITextFieldView+Additions.h in Headers */,
+				C2BC3BB78324220C9462BEFF85E298FE /* IQUIView+Hierarchy.h in Headers */,
+				BF41016C1FD383409F28054E64405E4B /* IQUIView+IQKeyboardToolbar.h in Headers */,
+				47FD1252280E8095A5516DBBBEB514F0 /* IQUIViewController+Additions.h in Headers */,
+				3A68947BD6CC1DA410E6E84B1C2BDBBF /* IQUIWindow+Hierarchy.h in Headers */,
+				2EA840C011C1C407E1E7C1A14C201BE9 /* KeyboardManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51EC9BA8F17A91DC812C12572564E3D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6189466A250448B76A4C9ABEA84084CC /* Chameleon.h in Headers */,
+				CCA47346C566454E0CE745AA5D9E69C6 /* ChameleonConstants.h in Headers */,
+				2BDC36EF5E371D6B46A855E0C9108DD3 /* ChameleonEnums.h in Headers */,
+				472051E193E9F2B0BAFB71CDF9D7F9DB /* ChameleonMacros.h in Headers */,
+				111462293D7E588FA20F708E0D5B5D0C /* Chameleon_.h in Headers */,
+				78B05AF000CB43FD85EF72DDB71AE945 /* NSArray+Chameleon.h in Headers */,
+				15D178238C8E70AA7D3C0D7F7170B56E /* UIAppearance+Swift.h in Headers */,
+				FC03992B2D1A72B06D802400FC5411BD /* UIButton+Chameleon.h in Headers */,
+				3DD387D6AAA68AA038342188CB237F04 /* UIColor+Chameleon.h in Headers */,
+				3B12D9D131FCD059DAA52374A25CD79C /* UIColor+ChameleonPrivate.h in Headers */,
+				A025F8EA090C1F1808CF2750A23B370B /* UIImage+ChameleonPrivate.h in Headers */,
+				F51C3F765B39B2F210686FECE9648957 /* UILabel+Chameleon.h in Headers */,
+				48A766A0255D674CDEB2607F2968E04E /* UINavigationController+Chameleon.h in Headers */,
+				E528A2CDE79CEED70EB6461AB0DE31BD /* UIView+ChameleonPrivate.h in Headers */,
+				F5480681F789135D79D10FD4C5F9D1DF /* UIViewController+Chameleon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D52109AB52CC648D9D48BF5B0429EB4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF4B9282D701BA821945F72AE5A0DBC9 /* SCLAlertView.h in Headers */,
+				CC7F149C12DB3961151920D10ED81434 /* SCLAlertViewResponder.h in Headers */,
+				AFD3326AB12EE9B27E9975C923B5DEAB /* SCLAlertViewStyleKit.h in Headers */,
+				C8D9A7E4036AAB935024CB6510DECB9D /* SCLButton.h in Headers */,
+				B80EE4A0F6F5DA5717B9721BEB29E654 /* SCLMacros.h in Headers */,
+				F538ED7A7EE4E7224908AC904F306106 /* SCLSwitchView.h in Headers */,
+				18197D36C2143576697BBB5D81A488EF /* SCLTextView.h in Headers */,
+				0FC694DFA1724814B8FD5B3AC1F8713D /* SCLTimerDisplay.h in Headers */,
+				CAE84929E2801636BB6D6A3BB81E03A5 /* UIImage+ImageEffects.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0FA1A08FB8F2A6E1ADE6141973CBB60B /* Pods-InventoryManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F809A5D51D69E8C0D8AF5942EB869C /* Build configuration list for PBXNativeTarget "Pods-InventoryManager" */;
+			buildPhases = (
+				134FDC489E2FECE4F2BE14B80D406C84 /* Sources */,
+				59593531A5A5EE076888A85AB0F891CC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A43120268C8B38D1915388DE031EA9D /* PBXTargetDependency */,
+				2838927B9CF13200E07830AEAD390BA3 /* PBXTargetDependency */,
+				E500D1C3F97DCE5F58DE50122FB17E9A /* PBXTargetDependency */,
+			);
+			name = "Pods-InventoryManager";
+			productName = "Pods-InventoryManager";
+			productReference = 01D0F18AFD96383AB54113CB155DD09C /* libPods-InventoryManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		46A833570EBAC79D6DD618D578C0F43C /* IQKeyboardManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94C176B4828BEE16DEBC0CAF9FD92B4F /* Build configuration list for PBXNativeTarget "IQKeyboardManager" */;
+			buildPhases = (
+				F1DEC960A8E168A38E3F67122483206D /* Sources */,
+				954817E0F6C4E80F8E7C48082A374A3C /* Frameworks */,
+				76E4410D51A94F9498F846072EABCBE6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IQKeyboardManager;
+			productName = IQKeyboardManager;
+			productReference = 5AF24A3C3618C639848B47184CC36B01 /* libIQKeyboardManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8480B0667BDB5040F257E6BD618AE343 /* SCLAlertView-Objective-C */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 976F901164B49B9DA974ED613B061D7F /* Build configuration list for PBXNativeTarget "SCLAlertView-Objective-C" */;
+			buildPhases = (
+				EA873736BE185C6384B3320C8AB0F73B /* Sources */,
+				54F868A1321AA9A39214BBD47FF3F211 /* Frameworks */,
+				D52109AB52CC648D9D48BF5B0429EB4B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SCLAlertView-Objective-C";
+			productName = "SCLAlertView-Objective-C";
+			productReference = A5D4EECC32FB39FC438FE904D54FDC40 /* libSCLAlertView-Objective-C.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D8D2E5790BC762CD16D6E13B617A5BAC /* ChameleonFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B93367330B36A27B81DBEF95E6816B87 /* Build configuration list for PBXNativeTarget "ChameleonFramework" */;
+			buildPhases = (
+				FA428A189EE13DCD97D177B2053EEEE4 /* Sources */,
+				EC97A9D85F0A91F3C1D56BF1A3CB86A9 /* Frameworks */,
+				A51EC9BA8F17A91DC812C12572564E3D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChameleonFramework;
+			productName = ChameleonFramework;
+			productReference = 7A2AF728781D9B95D72C30824E3FC368 /* libChameleonFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8D2E5790BC762CD16D6E13B617A5BAC /* ChameleonFramework */,
+				46A833570EBAC79D6DD618D578C0F43C /* IQKeyboardManager */,
+				0FA1A08FB8F2A6E1ADE6141973CBB60B /* Pods-InventoryManager */,
+				8480B0667BDB5040F257E6BD618AE343 /* SCLAlertView-Objective-C */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		134FDC489E2FECE4F2BE14B80D406C84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C7809C6118231295866652ED29E8887 /* Pods-InventoryManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA873736BE185C6384B3320C8AB0F73B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E7B30324893B638D187A354BC8794BA /* SCLAlertView-Objective-C-dummy.m in Sources */,
+				62E68ED016D76335CFC422A1325FCF7F /* SCLAlertView.m in Sources */,
+				4F912434374EDC467411D6AB5DD0672D /* SCLAlertViewResponder.m in Sources */,
+				953AE3F3DAD423635399D29FD04F6D44 /* SCLAlertViewStyleKit.m in Sources */,
+				81E79FD611D04F9E7C321C0D5F5A05DA /* SCLButton.m in Sources */,
+				B4E57E2BD5A54487A2BCD2BEE78C55A7 /* SCLSwitchView.m in Sources */,
+				7002CFD8B14A6A5CED7F258A680E29A3 /* SCLTextView.m in Sources */,
+				64A947308A7A3B249B4726BF102DB669 /* SCLTimerDisplay.m in Sources */,
+				ACE7223AD8E23FA8F25E6CE0362365A1 /* UIImage+ImageEffects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1DEC960A8E168A38E3F67122483206D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				055C69D83D688EF850C5498B1FFF4D1C /* IQBarButtonItem.m in Sources */,
+				905AF5256ED6F8D4D6CD620659A641E8 /* IQKeyboardManager-dummy.m in Sources */,
+				2125F52C183BD076E42D3516D4C7F8B8 /* IQKeyboardManager.m in Sources */,
+				5F44E66EFA7D2C10F738066DDC475627 /* IQKeyboardReturnKeyHandler.m in Sources */,
+				0B87A6820A0194B2DD360EA19E5C7C4B /* IQNSArray+Sort.m in Sources */,
+				ECFAF6DDC1EA0ADB61E0524ACF36592B /* IQPreviousNextView.m in Sources */,
+				C9F5003EADA69EBCC696659AC207C629 /* IQTextView.m in Sources */,
+				F99920734C26DDAE209B5E8BEEF049A9 /* IQTitleBarButtonItem.m in Sources */,
+				A7F2F84C31C49819279597F6FB5709EE /* IQToolbar.m in Sources */,
+				4A4556CF14D691EFCC76AE7CDC1AF876 /* IQUIScrollView+Additions.m in Sources */,
+				EEECA0EC98FE9B9A6F9A4C26E9064DE6 /* IQUITextFieldView+Additions.m in Sources */,
+				1209F0AB1742FDE1FEFADFEE330F3069 /* IQUIView+Hierarchy.m in Sources */,
+				1522FF9E8462011E9B1EDDA7570ADE4D /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				BA667510C2D349102FEBBB3EA2E05DE4 /* IQUIViewController+Additions.m in Sources */,
+				40B1B96CA7672F72B4F664230FF151D4 /* IQUIWindow+Hierarchy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA428A189EE13DCD97D177B2053EEEE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B01BDCC104DB236BAEFEC98B38454B6 /* ChameleonConstants.m in Sources */,
+				85F03D52FD176C13A36EE4F7DAA04522 /* ChameleonFramework-dummy.m in Sources */,
+				9D03A03B4C2836EA672B0ED20100FF58 /* Chameleon_.m in Sources */,
+				BAFF946CF58971F1B4137C71199959C5 /* NSArray+Chameleon.m in Sources */,
+				299B8B73BFCB59F4E5402CEC4B61B99C /* UIAppearance+Swift.m in Sources */,
+				C9E26CD1663455BB128DFD958063D011 /* UIButton+Chameleon.m in Sources */,
+				FE440C39E939EB1F387E91609FC99C32 /* UIColor+Chameleon.m in Sources */,
+				AE8B5792614817DE88C32E22FEF872D3 /* UIColor+ChameleonPrivate.m in Sources */,
+				7EDDBC7AF5A31C8F71D9D56D817D5F9E /* UIImage+ChameleonPrivate.m in Sources */,
+				9B365DFC38CE5B50A36C12E3C535A424 /* UILabel+Chameleon.m in Sources */,
+				47131F17D2544540064DDBBC27C725E7 /* UINavigationController+Chameleon.m in Sources */,
+				9C7E1315730441EAC3A1DF2E245E79D4 /* UIView+ChameleonPrivate.m in Sources */,
+				2781DFED9AF41BF78F7FE46250322433 /* UIViewController+Chameleon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2838927B9CF13200E07830AEAD390BA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManager;
+			target = 46A833570EBAC79D6DD618D578C0F43C /* IQKeyboardManager */;
+			targetProxy = 520E31246EDAAFDF3E48404FE6127171 /* PBXContainerItemProxy */;
+		};
+		8A43120268C8B38D1915388DE031EA9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ChameleonFramework;
+			target = D8D2E5790BC762CD16D6E13B617A5BAC /* ChameleonFramework */;
+			targetProxy = 06A52604873C80A3ED52ACCEA167261D /* PBXContainerItemProxy */;
+		};
+		E500D1C3F97DCE5F58DE50122FB17E9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SCLAlertView-Objective-C";
+			target = 8480B0667BDB5040F257E6BD618AE343 /* SCLAlertView-Objective-C */;
+			targetProxy = 98EA6E1FE31476B0C573D48AEF60168D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0575B4DBC11A9836B6EB7C34DEE06D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBAE167345EA063D995D9269425F3E6F /* ChameleonFramework-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		46F3DABAD7134DEE5F55B2E9CA0817E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBAE167345EA063D995D9269425F3E6F /* ChameleonFramework-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4F6E2B743AF0BB4073704C8715917F24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A071ACD6B16B737D54A39E5247F50B /* Pods-InventoryManager.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5B243A749A7B1F86B7F484DDC2F42E82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B63FB1B09BFE6ABF7D977746BC457D49 /* SCLAlertView-Objective-C-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView-Objective-C/SCLAlertView-Objective-C-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		680BA65C364E5C110B65C31BB0FCE465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C043FDA9405063771060B0752A3A8B2 /* Pods-InventoryManager.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A6EE4854A8FE1307AC3C3B87B2E3B71B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FADC4CDCCDF0349E660BF25CDF408A5A /* IQKeyboardManager-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManager/IQKeyboardManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A75FFF5C43D5B91BB6525D1C42AAB190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FADC4CDCCDF0349E660BF25CDF408A5A /* IQKeyboardManager-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManager/IQKeyboardManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0C1F1069C64F80064221D63BC3862EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B63FB1B09BFE6ABF7D977746BC457D49 /* SCLAlertView-Objective-C-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView-Objective-C/SCLAlertView-Objective-C-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1534490D941DCA47C62AC4314182AF /* Debug */,
+				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94C176B4828BEE16DEBC0CAF9FD92B4F /* Build configuration list for PBXNativeTarget "IQKeyboardManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A75FFF5C43D5B91BB6525D1C42AAB190 /* Debug */,
+				A6EE4854A8FE1307AC3C3B87B2E3B71B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95F809A5D51D69E8C0D8AF5942EB869C /* Build configuration list for PBXNativeTarget "Pods-InventoryManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				680BA65C364E5C110B65C31BB0FCE465 /* Debug */,
+				4F6E2B743AF0BB4073704C8715917F24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		976F901164B49B9DA974ED613B061D7F /* Build configuration list for PBXNativeTarget "SCLAlertView-Objective-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0C1F1069C64F80064221D63BC3862EE /* Debug */,
+				5B243A749A7B1F86B7F484DDC2F42E82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B93367330B36A27B81DBEF95E6816B87 /* Build configuration list for PBXNativeTarget "ChameleonFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0575B4DBC11A9836B6EB7C34DEE06D86 /* Debug */,
+				46F3DABAD7134DEE5F55B2E9CA0817E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

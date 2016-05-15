@@ -10,6 +10,21 @@
 
 @interface ViewController : UIViewController
 
+@property IBOutlet UIButton *mainButton;
+@property IBOutlet UILabel *statusLabel;
+@property IBOutlet UILabel *headLineLabel;
+@property IBOutlet UIButton *deviceInfoButton;
+@property IBOutlet UIButton *checkoutButton;
+
+-(IBAction)mainImageSelected:(id)sender;
+
+
+typedef NS_OPTIONS(NSInteger, DeviceStatus) {
+    DeviceNotEnrolled = 0,
+    DeviceAvailable = 1,
+    DeviceCheckedOut = 2
+    
+};
 
 @end
 

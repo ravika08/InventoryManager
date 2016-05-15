@@ -1,0 +1,18 @@
+PODS:
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - IQKeyboardManager (4.0.2)
+  - SCLAlertView-Objective-C (1.0.3)
+
+DEPENDENCIES:
+  - ChameleonFramework
+  - IQKeyboardManager
+  - SCLAlertView-Objective-C
+
+SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  IQKeyboardManager: 2341089c4ae25fa2fa82ce356a259fcd267dc6b6
+  SCLAlertView-Objective-C: e83376218b431109dc5403adc63f8e9787db7b74
+
+COCOAPODS: 0.38.0

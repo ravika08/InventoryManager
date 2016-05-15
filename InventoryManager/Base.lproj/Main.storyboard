@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bfr-xJ-N7E">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Inventory Manager-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewcontroller" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,266 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="Azq-tD-e4X">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x4c-eS-kap">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uz1-B8-XrU">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enroll Device" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyW-Xk-3pq">
+                                            <rect key="frame" x="0.0" y="80" width="600" height="40"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="29"/>
+                                            <color key="textColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click the button above to enroll device." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxb-a4-QiX">
+                                            <rect key="frame" x="25" y="293" width="550" height="25"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="18"/>
+                                            <color key="textColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLL-CC-eDS">
+                                            <rect key="frame" x="175" y="343" width="250" height="33"/>
+                                            <color key="backgroundColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="15"/>
+                                            <state key="normal" title="Device Info">
+                                                <color key="titleColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="JzF-S4-rND" kind="show" id="diL-pN-aFH"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wv2-oW-dWX">
+                                            <rect key="frame" x="175" y="396" width="250" height="33"/>
+                                            <color key="backgroundColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="250" id="knn-Jq-kZG"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="15"/>
+                                            <state key="normal" title="Check In/Check Out Another Device">
+                                                <color key="titleColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="aba-12-z3p" kind="show" id="g5c-aM-abN"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cognizant Technology Solutions 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wD4-VB-UHq">
+                                            <rect key="frame" x="20" y="552" width="560" height="18"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="13"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tia-Hp-Gms">
+                                            <rect key="frame" x="236" y="140" width="128" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="128" id="EC8-Xp-Kpk"/>
+                                                <constraint firstAttribute="width" constant="128" id="NG4-ds-Igs"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="add"/>
+                                            <connections>
+                                                <action selector="mainImageSelected:" destination="BYZ-38-t0r" eventType="touchDown" id="kov-ZX-ait"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="wD4-VB-UHq" firstAttribute="leading" secondItem="uz1-B8-XrU" secondAttribute="leading" constant="20" id="4Z9-7O-wVK"/>
+                                        <constraint firstItem="Wv2-oW-dWX" firstAttribute="top" secondItem="kLL-CC-eDS" secondAttribute="bottom" constant="20" id="5iE-l8-uEh"/>
+                                        <constraint firstItem="DyW-Xk-3pq" firstAttribute="top" secondItem="uz1-B8-XrU" secondAttribute="top" constant="80" id="6Yk-Wo-5Di"/>
+                                        <constraint firstAttribute="trailing" secondItem="Lxb-a4-QiX" secondAttribute="trailing" constant="25" id="6mi-iF-x7f"/>
+                                        <constraint firstItem="Lxb-a4-QiX" firstAttribute="leading" secondItem="uz1-B8-XrU" secondAttribute="leading" constant="25" id="AQ6-EP-ior"/>
+                                        <constraint firstItem="kLL-CC-eDS" firstAttribute="centerX" secondItem="uz1-B8-XrU" secondAttribute="centerX" id="Bby-Hd-Dxy"/>
+                                        <constraint firstItem="Wv2-oW-dWX" firstAttribute="centerX" secondItem="uz1-B8-XrU" secondAttribute="centerX" id="CO6-ho-RJc"/>
+                                        <constraint firstItem="Lxb-a4-QiX" firstAttribute="top" secondItem="tia-Hp-Gms" secondAttribute="bottom" constant="25" id="FTU-g0-WxR"/>
+                                        <constraint firstAttribute="trailing" secondItem="DyW-Xk-3pq" secondAttribute="trailing" id="Nfc-Xo-ba4"/>
+                                        <constraint firstItem="tia-Hp-Gms" firstAttribute="centerX" secondItem="uz1-B8-XrU" secondAttribute="centerX" id="V84-PT-UKT"/>
+                                        <constraint firstItem="Wv2-oW-dWX" firstAttribute="width" secondItem="kLL-CC-eDS" secondAttribute="width" id="Y5K-H6-Aak"/>
+                                        <constraint firstItem="Lxb-a4-QiX" firstAttribute="top" secondItem="tia-Hp-Gms" secondAttribute="bottom" constant="25" id="dje-X2-taF"/>
+                                        <constraint firstAttribute="bottom" secondItem="wD4-VB-UHq" secondAttribute="bottom" constant="30" id="ett-aS-iB3"/>
+                                        <constraint firstItem="kLL-CC-eDS" firstAttribute="top" secondItem="Lxb-a4-QiX" secondAttribute="bottom" constant="25" id="l4Q-SV-z8Q"/>
+                                        <constraint firstAttribute="trailing" secondItem="wD4-VB-UHq" secondAttribute="trailing" constant="20" id="oXL-nJ-QZF"/>
+                                        <constraint firstItem="Wv2-oW-dWX" firstAttribute="height" secondItem="kLL-CC-eDS" secondAttribute="height" id="p7b-TA-kut"/>
+                                        <constraint firstItem="tia-Hp-Gms" firstAttribute="top" secondItem="DyW-Xk-3pq" secondAttribute="bottom" constant="20" id="rm1-GC-8qA"/>
+                                        <constraint firstItem="DyW-Xk-3pq" firstAttribute="leading" secondItem="uz1-B8-XrU" secondAttribute="leading" id="vWx-l6-aIs"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="dje-X2-taF"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="x4c-eS-kap" secondAttribute="trailing" constant="-20" id="5U6-iU-HbN"/>
+                            <constraint firstItem="Azq-tD-e4X" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Or7-cO-4lA"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="x4c-eS-kap" secondAttribute="bottom" id="TkZ-Y3-fP1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Azq-tD-e4X" secondAttribute="trailing" constant="-20" id="Uo2-bD-Xl9"/>
+                            <constraint firstItem="x4c-eS-kap" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="bDd-ap-2kr"/>
+                            <constraint firstItem="Azq-tD-e4X" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="iNA-S4-a81"/>
+                            <constraint firstItem="Azq-tD-e4X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="oTs-Le-vgs"/>
+                            <constraint firstItem="x4c-eS-kap" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="vlb-r9-iiT"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Inventory Manager" id="BDq-oX-kO3"/>
+                    <connections>
+                        <outlet property="checkoutButton" destination="Wv2-oW-dWX" id="gST-yN-kUq"/>
+                        <outlet property="deviceInfoButton" destination="kLL-CC-eDS" id="GLF-zl-XGU"/>
+                        <outlet property="headLineLabel" destination="DyW-Xk-3pq" id="zMs-Vm-COp"/>
+                        <outlet property="mainButton" destination="tia-Hp-Gms" id="dc9-Bf-mkK"/>
+                        <outlet property="statusLabel" destination="Lxb-a4-QiX" id="Dxl-cr-kmq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1152" y="361"/>
+        </scene>
+        <!--Scan Device-->
+        <scene sceneID="SvH-yF-lkG">
+            <objects>
+                <viewController id="aba-12-z3p" customClass="ScanViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tSF-Wc-gM2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uct-0R-Abh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6KT-K1-Sg5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scan Device" id="Y54-EM-33B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MEx-ca-2aY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1795" y="753"/>
+        </scene>
+        <!--Device Info-->
+        <scene sceneID="oHF-v6-Xe4">
+            <objects>
+                <viewController id="JzF-S4-rND" customClass="DeviceInfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n3o-v9-WsL"/>
+                        <viewControllerLayoutGuide type="bottom" id="22J-VW-TAD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gCV-32-lWl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="Puc-cJ-3AE">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nb0-AC-Tyw">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vza-86-dd8">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qnv-1Q-wmn">
+                                            <rect key="frame" x="236" y="25" width="128" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="128" id="GGQ-8b-qYB"/>
+                                                <constraint firstAttribute="width" constant="128" id="XUc-yA-MTl"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Id:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jy8-dy-Kw9">
+                                            <rect key="frame" x="25" y="173" width="550" height="24"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
+                                            <color key="textColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OS Version:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hL-mW-tBe">
+                                            <rect key="frame" x="266" y="207" width="69" height="24"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
+                                            <color key="textColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cognizant Technology Solutions 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4d-bc-DHE">
+                                            <rect key="frame" x="208" y="491" width="185" height="20"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Checked Out to 211156" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9X-Kr-Ggr">
+                                            <rect key="frame" x="208" y="241" width="185" height="24"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
+                                            <color key="textColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="v9X-Kr-Ggr" firstAttribute="centerX" secondItem="vza-86-dd8" secondAttribute="centerX" id="2WX-yS-gGX"/>
+                                        <constraint firstItem="qnv-1Q-wmn" firstAttribute="centerX" secondItem="vza-86-dd8" secondAttribute="centerX" id="5oc-ca-slB"/>
+                                        <constraint firstItem="v9X-Kr-Ggr" firstAttribute="top" secondItem="5hL-mW-tBe" secondAttribute="bottom" constant="10" id="7rP-PU-pTt"/>
+                                        <constraint firstItem="5hL-mW-tBe" firstAttribute="top" secondItem="jy8-dy-Kw9" secondAttribute="bottom" constant="10" id="GgX-fP-a5f"/>
+                                        <constraint firstAttribute="bottom" secondItem="i4d-bc-DHE" secondAttribute="bottom" constant="25" id="Huw-dv-mp1"/>
+                                        <constraint firstItem="jy8-dy-Kw9" firstAttribute="centerX" secondItem="vza-86-dd8" secondAttribute="centerX" id="ITn-eA-wjD"/>
+                                        <constraint firstItem="jy8-dy-Kw9" firstAttribute="leading" secondItem="vza-86-dd8" secondAttribute="leading" constant="25" id="Lmf-wb-09Z"/>
+                                        <constraint firstItem="5hL-mW-tBe" firstAttribute="centerX" secondItem="vza-86-dd8" secondAttribute="centerX" id="Osp-Bs-fpG"/>
+                                        <constraint firstItem="i4d-bc-DHE" firstAttribute="leading" secondItem="v9X-Kr-Ggr" secondAttribute="leading" id="Vos-7i-bQc"/>
+                                        <constraint firstItem="qnv-1Q-wmn" firstAttribute="top" secondItem="vza-86-dd8" secondAttribute="top" constant="25" id="gcO-7r-xTN"/>
+                                        <constraint firstItem="jy8-dy-Kw9" firstAttribute="top" secondItem="qnv-1Q-wmn" secondAttribute="bottom" constant="20" id="mam-H2-eGk"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nb0-AC-Tyw" firstAttribute="top" secondItem="n3o-v9-WsL" secondAttribute="bottom" id="82Q-v3-5J9"/>
+                            <constraint firstItem="22J-VW-TAD" firstAttribute="top" secondItem="nb0-AC-Tyw" secondAttribute="bottom" id="9Vh-87-z4C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Puc-cJ-3AE" secondAttribute="trailing" constant="-20" id="BgY-Lc-GXi"/>
+                            <constraint firstItem="nb0-AC-Tyw" firstAttribute="leading" secondItem="gCV-32-lWl" secondAttribute="leadingMargin" constant="-20" id="Gjf-67-1jX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nb0-AC-Tyw" secondAttribute="trailing" constant="-20" id="LhY-V3-BcJ"/>
+                            <constraint firstItem="Puc-cJ-3AE" firstAttribute="leading" secondItem="gCV-32-lWl" secondAttribute="leadingMargin" constant="-20" id="eBa-sO-tJT"/>
+                            <constraint firstItem="Puc-cJ-3AE" firstAttribute="top" secondItem="n3o-v9-WsL" secondAttribute="bottom" id="iGe-95-tBg"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Puc-cJ-3AE" secondAttribute="bottom" id="iUE-bk-nnJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Device Info" id="dgQ-8j-aSS"/>
+                    <connections>
+                        <outlet property="devInfoLabel" destination="5hL-mW-tBe" id="u9S-T6-6dA"/>
+                        <outlet property="deviceIDLabel" destination="jy8-dy-Kw9" id="iVp-lc-cAv"/>
+                        <outlet property="qrCodeImage" destination="qnv-1Q-wmn" id="9OY-sF-Cmg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="phq-A5-JOr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2663" y="361"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TQp-hH-DWS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bfr-xJ-N7E" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bd5-Z5-NNh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="23"/>
+                            <color key="textColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pcm-4z-2KP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YtV-ud-zcY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="361"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add" width="128" height="128"/>
+        <image name="images" width="225" height="225"/>
+    </resources>
 </document>

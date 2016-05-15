@@ -1,0 +1,1 @@
+SCLALERTVIEW_OBJECTIVE_C_OTHER_LDFLAGS = -framework "Accelerate" -framework "AudioToolbox" -framework "CoreGraphics" -framework "UIKit"
