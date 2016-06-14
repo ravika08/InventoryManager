@@ -6,6 +6,7 @@ target 'InventoryManager' do
 pod 'IQKeyboardManager'
 pod 'ChameleonFramework'
 pod 'SCLAlertView-Objective-C'
+pod 'MBProgressHUD'
 
 end
 

@@ -19,7 +19,12 @@
 		97637A601CE51ED700973EAC /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 97637A5F1CE51ED700973EAC /* UIDeviceHardware.m */; };
 		97637A641CE56C2A00973EAC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97637A631CE56C2A00973EAC /* Login.storyboard */; };
 		97637A661CE5708B00973EAC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97637A651CE5708B00973EAC /* LoginViewController.m */; };
+		977B60C71CEE1BE100225139 /* Enroll.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977B60C61CEE1BE100225139 /* Enroll.storyboard */; };
+		977B60C91CEE3DFE00225139 /* EnrollDeviceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 977B60C81CEE3DFE00225139 /* EnrollDeviceDetailViewController.m */; };
 		977ED3E31CE669300036E5D1 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 977ED3E21CE669300036E5D1 /* ScanViewController.m */; };
+		977ED3E51CEA0F750036E5D1 /* RestAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 977ED3E41CEA0F750036E5D1 /* RestAdapter.m */; };
+		977ED3E91CEA10480036E5D1 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 977ED3E81CEA10480036E5D1 /* Constants.m */; };
+		977ED3EC1CEA15190036E5D1 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 977ED3EB1CEA15190036E5D1 /* Device.m */; };
 		C89C2A232227B643129D0B3E /* libPods-InventoryManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 065A7D48D984C29F9DA1880C /* libPods-InventoryManager.a */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +54,7 @@
 		97637A291CE3C65900973EAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		97637A2A1CE3C65900973EAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		97637A2C1CE3C65900973EAC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		97637A2D1CE3C65900973EAC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		97637A2D1CE3C65900973EAC /* ViewController.m */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		97637A301CE3C65900973EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97637A321CE3C65900973EAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97637A351CE3C65900973EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,8 +72,17 @@
 		97637A631CE56C2A00973EAC /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		97637A651CE5708B00973EAC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		97637A671CE5709F00973EAC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		977B60C61CEE1BE100225139 /* Enroll.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Enroll.storyboard; sourceTree = "<group>"; };
+		977B60C81CEE3DFE00225139 /* EnrollDeviceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnrollDeviceDetailViewController.m; sourceTree = "<group>"; };
+		977B60CA1CEE3E1800225139 /* EnrollDeviceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnrollDeviceDetailViewController.h; sourceTree = "<group>"; };
 		977ED3E11CE6691D0036E5D1 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
 		977ED3E21CE669300036E5D1 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		977ED3E41CEA0F750036E5D1 /* RestAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestAdapter.m; sourceTree = "<group>"; };
+		977ED3E61CEA0F840036E5D1 /* RestAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestAdapter.h; sourceTree = "<group>"; };
+		977ED3E71CEA103A0036E5D1 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		977ED3E81CEA10480036E5D1 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		977ED3EA1CEA150E0036E5D1 /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		977ED3EB1CEA15190036E5D1 /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,24 +136,15 @@
 		97637A251CE3C65800973EAC /* InventoryManager */ = {
 			isa = PBXGroup;
 			children = (
-				97637A5E1CE51ED700973EAC /* UIDeviceHardware.h */,
-				97637A5F1CE51ED700973EAC /* UIDeviceHardware.m */,
+				97C893241D08668A0025B2ED /* Services */,
+				97C893231D08667A0025B2ED /* Domain */,
+				97C893221D08664A0025B2ED /* ViewControllers */,
+				97C893211D0866110025B2ED /* Storyboards */,
 				97637A291CE3C65900973EAC /* AppDelegate.h */,
 				97637A2A1CE3C65900973EAC /* AppDelegate.m */,
-				97637A2C1CE3C65900973EAC /* ViewController.h */,
-				97637A2D1CE3C65900973EAC /* ViewController.m */,
-				97637A5B1CE519FD00973EAC /* DeviceInfoViewController.m */,
-				97637A5D1CE51A1300973EAC /* DeviceInfoViewController.h */,
-				97637A2F1CE3C65900973EAC /* Main.storyboard */,
 				97637A321CE3C65900973EAC /* Assets.xcassets */,
-				97637A341CE3C65900973EAC /* LaunchScreen.storyboard */,
 				97637A371CE3C65A00973EAC /* Info.plist */,
 				97637A261CE3C65800973EAC /* Supporting Files */,
-				97637A631CE56C2A00973EAC /* Login.storyboard */,
-				97637A651CE5708B00973EAC /* LoginViewController.m */,
-				97637A671CE5709F00973EAC /* LoginViewController.h */,
-				977ED3E11CE6691D0036E5D1 /* ScanViewController.h */,
-				977ED3E21CE669300036E5D1 /* ScanViewController.m */,
 			);
 			path = InventoryManager;
 			sourceTree = "<group>";
@@ -147,6 +152,8 @@
 		97637A261CE3C65800973EAC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				977ED3E71CEA103A0036E5D1 /* Constants.h */,
+				977ED3E81CEA10480036E5D1 /* Constants.m */,
 				97637A271CE3C65800973EAC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -168,6 +175,54 @@
 				97637A4D1CE3C65A00973EAC /* Info.plist */,
 			);
 			path = InventoryManagerUITests;
+			sourceTree = "<group>";
+		};
+		97C893211D0866110025B2ED /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				97637A2F1CE3C65900973EAC /* Main.storyboard */,
+				97637A341CE3C65900973EAC /* LaunchScreen.storyboard */,
+				977B60C61CEE1BE100225139 /* Enroll.storyboard */,
+				97637A631CE56C2A00973EAC /* Login.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		97C893221D08664A0025B2ED /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				97637A2C1CE3C65900973EAC /* ViewController.h */,
+				97637A2D1CE3C65900973EAC /* ViewController.m */,
+				97637A651CE5708B00973EAC /* LoginViewController.m */,
+				97637A671CE5709F00973EAC /* LoginViewController.h */,
+				977ED3E11CE6691D0036E5D1 /* ScanViewController.h */,
+				977ED3E21CE669300036E5D1 /* ScanViewController.m */,
+				97637A5D1CE51A1300973EAC /* DeviceInfoViewController.h */,
+				977B60C81CEE3DFE00225139 /* EnrollDeviceDetailViewController.m */,
+				977B60CA1CEE3E1800225139 /* EnrollDeviceDetailViewController.h */,
+				97637A5B1CE519FD00973EAC /* DeviceInfoViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		97C893231D08667A0025B2ED /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				977ED3EA1CEA150E0036E5D1 /* Device.h */,
+				977ED3EB1CEA15190036E5D1 /* Device.m */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		97C893241D08668A0025B2ED /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				97637A5E1CE51ED700973EAC /* UIDeviceHardware.h */,
+				977ED3E61CEA0F840036E5D1 /* RestAdapter.h */,
+				97637A5F1CE51ED700973EAC /* UIDeviceHardware.m */,
+				977ED3E41CEA0F750036E5D1 /* RestAdapter.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		C042C8A40A5E736A58519662 /* Frameworks */ = {
@@ -256,6 +311,7 @@
 				TargetAttributes = {
 					97637A221CE3C65800973EAC = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = NK67TZ5RDP;
 					};
 					97637A3B1CE3C65A00973EAC = {
 						CreatedOnToolsVersion = 7.2;
@@ -293,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97637A641CE56C2A00973EAC /* Login.storyboard in Resources */,
+				977B60C71CEE1BE100225139 /* Enroll.storyboard in Resources */,
 				97637A361CE3C65900973EAC /* LaunchScreen.storyboard in Resources */,
 				97637A331CE3C65900973EAC /* Assets.xcassets in Resources */,
 				97637A311CE3C65900973EAC /* Main.storyboard in Resources */,
@@ -356,10 +413,14 @@
 				97637A5C1CE519FD00973EAC /* DeviceInfoViewController.m in Sources */,
 				97637A601CE51ED700973EAC /* UIDeviceHardware.m in Sources */,
 				97637A661CE5708B00973EAC /* LoginViewController.m in Sources */,
+				977ED3EC1CEA15190036E5D1 /* Device.m in Sources */,
 				97637A2E1CE3C65900973EAC /* ViewController.m in Sources */,
 				977ED3E31CE669300036E5D1 /* ScanViewController.m in Sources */,
 				97637A2B1CE3C65900973EAC /* AppDelegate.m in Sources */,
 				97637A281CE3C65800973EAC /* main.m in Sources */,
+				977ED3E51CEA0F750036E5D1 /* RestAdapter.m in Sources */,
+				977B60C91CEE3DFE00225139 /* EnrollDeviceDetailViewController.m in Sources */,
+				977ED3E91CEA10480036E5D1 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,10 +562,13 @@
 			baseConfigurationReference = 6139929BB6D3ECF5F35C8A9A /* Pods-InventoryManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = InventoryManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cognizant.InventoryManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -513,10 +577,13 @@
 			baseConfigurationReference = 40E5612BE813824A1665A619 /* Pods-InventoryManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = InventoryManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cognizant.InventoryManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

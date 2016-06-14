@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FA6848FB5A00066532715073"
+               BlueprintIdentifier = "95627673A0DB48AEF15B4A39"
                BuildableName = "libPods-InventoryManager.a"
                BlueprintName = "Pods-InventoryManager"
                ReferencedContainer = "container:Pods.xcodeproj">

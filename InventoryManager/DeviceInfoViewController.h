@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Device.h"
 
 @interface DeviceInfoViewController : UIViewController
 
 @property IBOutlet UIImageView *qrCodeImage;
 @property IBOutlet UILabel *deviceIDLabel;
 @property IBOutlet UILabel *devInfoLabel;
+
+@property IBOutlet UILabel *checkedOutLabel;
+
+@property (nonatomic,strong) Device *device;
 @end

@@ -3,16 +3,19 @@ PODS:
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
   - IQKeyboardManager (4.0.2)
+  - MBProgressHUD (0.9.2)
   - SCLAlertView-Objective-C (1.0.3)
 
 DEPENDENCIES:
   - ChameleonFramework
   - IQKeyboardManager
+  - MBProgressHUD
   - SCLAlertView-Objective-C
 
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   IQKeyboardManager: 2341089c4ae25fa2fa82ce356a259fcd267dc6b6
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   SCLAlertView-Objective-C: e83376218b431109dc5403adc63f8e9787db7b74
 
 COCOAPODS: 0.38.0

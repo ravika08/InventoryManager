@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7920EBACD754F1C34785D8D7"
-               BuildableName = "libSCLAlertView-Objective-C.a"
-               BlueprintName = "SCLAlertView-Objective-C"
+               BlueprintIdentifier = "E09CE676B5DFD525E584E047"
+               BuildableName = "libMBProgressHUD.a"
+               BlueprintName = "MBProgressHUD"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -13,8 +13,11 @@
 @property IBOutlet UIButton *mainButton;
 @property IBOutlet UILabel *statusLabel;
 @property IBOutlet UILabel *headLineLabel;
+@property IBOutlet UILabel *usageHoursLabel;
 @property IBOutlet UIButton *deviceInfoButton;
 @property IBOutlet UIButton *checkoutButton;
+@property NSDate *lastUpdated;
+@property NSTimer *usageTimer;
 
 -(IBAction)mainImageSelected:(id)sender;
 

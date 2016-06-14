@@ -9,6 +9,10 @@
 #import <AVFoundation/AVFoundation.h>
 #import "ScanViewController.h"
 #import "Chameleon.h"
+#import "RestAdapter.h"
+#import "SCLAlertView.h"
+#import "Device.h"
+#import "MBProgressHUD.h"
 
 
 @interface ScanViewController () <AVCaptureMetadataOutputObjectsDelegate>
@@ -30,6 +34,8 @@
 
 @implementation ScanViewController
 
+MBProgressHUD *progressIndicator;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -44,8 +50,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self setupHighlightView];
-    
+    [self registerForNotifications];
     
     //this is bottom toolbar that's part of the navigation controller.
     
@@ -88,17 +93,111 @@
     [self addOverlayImage];
 }
 
--(void)setupHighlightView {
-    _highlightView = [[UIView alloc] init];
-    _highlightView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleBottomMargin;
-    _highlightView.layer.borderColor = [UIColor greenColor].CGColor;
-    _highlightView.layer.borderWidth = 3;
-    [self.view addSubview:_highlightView];
+-(void)registerForNotifications{
+    
+    RestAdapter *restAdapter = [RestAdapter sharedInstance];
+    NSNotificationCenter *noteCenter = [NSNotificationCenter defaultCenter];
+    
+    [noteCenter addObserver:self
+                   selector:@selector(handleDeviceStatusNotFound:)
+                       name:kDeviceStatusNotEnrolled
+                     object:restAdapter];
+    [noteCenter addObserver:self
+                   selector:@selector(handleDeviceStatusFound:)
+                       name:kDeviceStatusEnrolled
+                     object:nil];
+    [noteCenter addObserver:self
+                   selector:@selector(handleDeviceUpdated:)
+                       name:kDeviceUpdated
+                     object:nil];
+    
 }
+
+-(void)handleDeviceStatusNotFound:(NSNotification *)responseNote{
+    
+    [progressIndicator hide:YES];
+    NSLog(@"Device Status Not Enrolled in scan controller");
+    [self alertForDeviceNotFound];
+    
+}
+
+-(void)alertForDeviceNotFound{
+    
+    SCLAlertView *alert = [[SCLAlertView alloc] init];
+    alert.shouldDismissOnTapOutside = YES;
+    alert.backgroundType=Blur;
+    alert.customViewColor=[UIColor flatRedColor];
+    alert.attributedFormatBlock = ^NSAttributedString* (NSString *value)
+    {
+        NSMutableAttributedString *subTitle = [[NSMutableAttributedString alloc]initWithString:value];
+        NSRange redRange = [value rangeOfString:value options:NSCaseInsensitiveSearch];
+        [subTitle addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Avenir Next Condensed" size:17.0] range:redRange];
+        
+        return subTitle;
+    };
+    
+    [alert showSuccess:self title:@"Error!" subTitle:@"Could Not locate the scanned device in inventory" closeButtonTitle:@"OK" duration:0.0f];
+    
+    
+}
+
+-(void)handleDeviceStatusFound:(NSNotification *)responseNote{
+    [progressIndicator hide:YES];
+    NSLog(@"Device Status  Enrolled in scan controller");
+    Device *device =[responseNote.userInfo objectForKey:kDeviceKey];
+    [self alertForDeviceFound:device];
+}
+
+-(void)alertForDeviceFound:(Device *)device{
+    
+    SCLAlertView *alert = [[SCLAlertView alloc] init];
+    alert.shouldDismissOnTapOutside = YES;
+    [alert setHorizontalButtons:YES];
+    alert.backgroundType=Blur;
+    alert.customViewColor=[UIColor flatSkyBlueColor];
+    alert.attributedFormatBlock = ^NSAttributedString* (NSString *value)
+    {
+        NSMutableAttributedString *subTitle = [[NSMutableAttributedString alloc]initWithString:value];
+        NSRange redRange = [value rangeOfString:value options:NSCaseInsensitiveSearch];
+        [subTitle addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Avenir Next Condensed" size:17.0] range:redRange];
+        
+        return subTitle;
+    };
+    NSString *subtitle=@"";
+    if([device.status isEqualToString:@"available"]){
+        NSLog(@"Device available");
+        UITextField *textField=[alert addTextField:@"UserID"];
+        subtitle=[NSString stringWithFormat:@"Status : Available"];
+        [alert addButton:@"Check Out" actionBlock:^(void) {
+            NSString *userId=textField.text;
+            [[RestAdapter sharedInstance] updateDeviceForUser:userId withStatus:@"checkedOut"];
+        }];
+
+    }
+    if([device.status isEqualToString:@"checkedOut"]){
+        NSLog(@"Device checked out");
+        subtitle=[NSString stringWithFormat:@"Checked out to %@",device.user];
+        [alert addButton:@"Check In" actionBlock:^(void) {
+             [[RestAdapter sharedInstance] updateDeviceForUser:@"admin" withStatus:@"available"];
+        }];
+    }
+    [alert showInfo:self title:@"Device Found" subTitle:subtitle closeButtonTitle:@"Cancel" duration:0.0f];
+
+    
+    
+}
+
+
+-(void)handleDeviceUpdated:(NSNotification *)responseNote{
+    
+    NSLog(@"Device Status  updated in scan controller");
+}
+
 
 -(void)tapToFocus:(UITapGestureRecognizer *)singleTap{
     //dismiss keyboard if trying to focus...
         //get the touch point
+    self.canSendBarcodeToDelegate=YES;
     CGPoint touchPoint = [singleTap locationInView:self.view];
     CGPoint convertedPoint = [_prevLayer captureDevicePointOfInterestForPoint:touchPoint];
     
@@ -155,7 +254,7 @@
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection
 {
-    //iOS AVCaputure may call this delegate method at will for a sigle barcode scan,
+    //iOS AVCaputure may call this delegate method at will for a single barcode scan,
     //we only need to inform the CamerasCanner delegate once per user initiated scan.
     if(self.canSendBarcodeToDelegate == NO) {
         NSLog(@"Camera - these are not the barcodes you're looking for...");
@@ -195,8 +294,14 @@
             
             if(trimmedBarcode.length > 0) {
                 
-                _barcode = trimmedBarcode;
-                    self.canSendBarcodeToDelegate = NO;
+                NSLog(@"Scanned :%@",trimmedBarcode);
+                progressIndicator = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+                progressIndicator.mode = MBProgressHUDModeDeterminate;
+                progressIndicator.labelText = @"Searching for device";
+
+                [self sendBarcode:trimmedBarcode];
+                self.canSendBarcodeToDelegate=NO;
+                
                
             }
             break;
@@ -206,17 +311,22 @@
     _highlightView.frame = highlightViewRect;
 }
 
+-(void)sendBarcode:(NSString *)barcode{
+    
+    [[RestAdapter sharedInstance] checkDeviceStatus:barcode];
+    
+}
+
 -(void) addOverlayImage{
+    
     CGRect overlayRect = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, _prevLayer.bounds.size.width, _prevLayer.bounds.size.height);
     UIView *overlayView = [[UIView alloc] initWithFrame:overlayRect];
     overlayView.tag=13;
     UIImageView *overlayImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"focus"]];
     overlayImage.image = [overlayImage.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     overlayImage.center=overlayView.center;
-    //overlayImage.alpha = 0.5;
     [overlayImage setTintColor:[UIColor flatWhiteColorDark]];
     [overlayView addSubview:overlayImage];
-    
     [self.view addSubview:overlayView];
     [self.view layoutIfNeeded];
 }

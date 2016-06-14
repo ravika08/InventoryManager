@@ -8,18 +8,23 @@
 
 #import <Foundation/Foundation.h>
 #import "DeviceInfoViewController.h"
-#import "UIDeviceHardware.h"
+#import "Device.h"
+
 
 @implementation DeviceInfoViewController
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    NSString* Identifier = [[[UIDevice currentDevice] identifierForVendor] UUIDString]; // IOS 6+
+    
+    NSString* Identifier = [[Device sharedInstance] deviceIdentifier]; // IOS 6+
     NSLog(@"output is : %@", Identifier);
     CIImage *qrCode = [self createQRForString:Identifier];
-    NSString *OSVersion = [UIDevice currentDevice].systemVersion;
-    NSString *platformString = [UIDeviceHardware platformString];
-   
+    NSString *OSVersion = [[Device sharedInstance] deviceOSVersion];
+    NSString *platformString = [[Device sharedInstance] devicePlatformString];
+    if([self.device.status isEqualToString:@"checkedOut"]){
+        self.checkedOutLabel.hidden=NO;
+        self.checkedOutLabel.text =[NSString stringWithFormat:@"Device checked out to %@",self.device.user];
+    }
     // Convert to an UIImage
     UIImage *qrCodeImg = [self createNonInterpolatedUIImageFromCIImage:qrCode withScale:2*[[UIScreen mainScreen] scale]];
 

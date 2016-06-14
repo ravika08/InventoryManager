@@ -5,7 +5,7 @@
 //  Created by ctsuser1 on 5/11/16.
 //  Copyright © 2016 Cognizant. All rights reserved.
 //
-
+#import "EnrollDeviceDetailViewController.h"
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -37,6 +37,22 @@
         
     }
     return YES;
+}
+
+-(void)presentEnrollDetailModal{
+    [self.window makeKeyAndVisible];
+    
+    
+    UIStoryboard *enrollStoryBoard = [UIStoryboard storyboardWithName:@"Enroll" bundle:nil];
+    
+    UIViewController *enroll = [enrollStoryBoard instantiateInitialViewController];
+    enroll.modalPresentationStyle=UIModalPresentationFullScreen;
+    enroll.modalTransitionStyle=UIModalTransitionStyleCoverVertical;
+    [[self topViewController] presentViewController:enroll animated:YES completion:^{
+        
+    }];
+
+    
 }
 
 - (UIViewController *)topViewController{
