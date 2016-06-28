@@ -14,5 +14,7 @@
 
 -(void)presentEnrollDetailModal;
 
+-(void)presentUpdateDeviceModal;
+
 @end
 

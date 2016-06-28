@@ -26,6 +26,10 @@
 @property (nonatomic,strong) NSString *cloudType;
 @property (nonatomic,strong) NSNumber *hours;
 @property (nonatomic,strong) NSString *lastUpdated_at;
+@property (nonatomic,strong) NSString *purchase_date;
+@property (nonatomic,strong) NSString *osversion;
+@property (nonatomic,strong) NSString *client;
+@property (nonatomic,strong) NSString *assetID;
 
 +(instancetype)sharedInstance;
 

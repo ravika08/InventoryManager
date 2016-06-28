@@ -62,6 +62,9 @@
     [dictionary setValue:self.macAddress forKey:@"macAddress"];
     [dictionary setValue:self.screenResolution forKey:@"screenResolution"];
     [dictionary setValue:self.cloudType forKey:@"cloudType"];
+    [dictionary setValue:self.osversion forKey:@"osversion"];
+    [dictionary setValue:self.client forKey:@"client"];
+    [dictionary setValue:self.assetID forKey:@"assetID"];
     return dictionary;
 }
 

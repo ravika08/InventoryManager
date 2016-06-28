@@ -14,9 +14,10 @@
 @property IBOutlet UITextField *locationTextField;
 @property IBOutlet UITextField *imeiTextField;
 @property IBOutlet UITextField *macaddressTextField;
-@property IBOutlet UITextField *serialNoTextField;
+@property IBOutlet UITextField *clientTextField;
 @property IBOutlet UITextField *screeresolutionTextField;
 @property IBOutlet UITextField *deviceIDTextField;
 @property IBOutlet UITextField *categoryTextField;
 @property IBOutlet UITextField *cloudTypeTextField;
+@property IBOutlet UITextField *assetIDTextField;
 @end

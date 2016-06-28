@@ -9,10 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "RestAdapter.h"
 #import "Device.h"
+#import "Constants.h"
 
 @implementation RestAdapter:NSObject
 
-NSString *const serverURL=@"http://localhost:8080/";
+
 NSString *const enrollApi=@"api/devices";
 NSString *const updateApi=@"api/devices";
 NSString *const kDeviceStatusNotEnrolled=@"devicestatus.notEnrolled";
@@ -52,7 +53,8 @@ NSString *const kDeviceKey = @"DeviceKey";
  *  @return NSMutableURLRequest
  */
 -(NSMutableURLRequest *)getRequestForURL:(NSString *)path{
-    
+    NSString  *serverURL=[NSString stringWithFormat:@"%@:8080/",[[NSUserDefaults standardUserDefaults] objectForKey:kServerURLKey] ];
+    NSLog(@"server:%@",serverURL);
     NSURL *url = [NSURL URLWithString:[serverURL stringByAppendingPathComponent:path]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
     [request setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
@@ -123,6 +125,7 @@ NSString *const kDeviceKey = @"DeviceKey";
                                                                 //send device enrolled success note
                                                                         Device *device = [[Device alloc] initWithDictionary:jsonObject];
                                                                         NSDictionary *userInfo = @{kDeviceKey:device};
+                                                                        NSLog(@"Device Enrolled notification sent");
                                                                         [[NSNotificationCenter defaultCenter] postNotificationName:kDeviceEnrolled
                                                                                                                             object:self
                                                                                                                           userInfo:userInfo];
@@ -181,6 +184,47 @@ NSString *const kDeviceKey = @"DeviceKey";
     
     [dataTask resume];
 
+    
+}
+
+-(void)updateDeviceDetails:(Device *)device{
+    
+    NSString *deviceId=[[Device sharedInstance] deviceIdentifier];
+    NSString *path=[NSString stringWithFormat:@"%@/%@",enrollApi,deviceId];
+    NSMutableURLRequest *request = [self getRequestForURL:path];
+    [request setHTTPMethod:@"POST"];
+    NSDictionary *bodyDict = [NSDictionary dictionaryWithObjectsAndKeys:
+                              device.osversion, @"osversion",
+                              device.client, @"client",
+                              device.cloudType,@"cloudType",
+                              device.location,@"location",
+                              nil];
+    request.HTTPBody = [NSJSONSerialization dataWithJSONObject:bodyDict options:kNilOptions error:nil];
+    NSURLSessionDataTask *dataTask = [self.defaultSession dataTaskWithRequest:request
+                                                            completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
+                                                                NSHTTPURLResponse *httpResp = (NSHTTPURLResponse*) response;
+                                                                if (!error) {
+                                                                    if (httpResp.statusCode == 200) {
+                                                                        NSError *jsonError;
+                                                                        
+                                                                        NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:data
+                                                                                                                                   options:NSJSONReadingAllowFragments error:&jsonError];
+                                                                        
+                                                                        Device *device = [[Device alloc] initWithDictionary:jsonObject];
+                                                                        NSDictionary *userInfo = @{kDeviceKey:device};
+                                                                        NSLog(@"Device updated ");
+                                                                        //send device updated success note
+                                                                        [[NSNotificationCenter defaultCenter] postNotificationName:kDeviceUpdated
+                                                                                                                            object:self
+                                                                                                                          userInfo:userInfo];
+                                                                        
+                                                                    }
+                                                                }
+                                                            }];
+    
+    [dataTask resume];
+
+    
     
 }
 

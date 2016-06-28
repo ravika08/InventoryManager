@@ -27,4 +27,5 @@ extern NSString *const kDeviceUpdated;
 -(void)checkDeviceStatus:(NSString *)deviceId;
 -(void) enrollDevice:(Device *)device;
 -(void) updateDeviceForUser:(NSString *)userId withStatus:(NSString *)status;
+-(void)updateDeviceDetails:(Device *)device;
 @end

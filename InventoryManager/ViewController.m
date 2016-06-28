@@ -27,9 +27,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self registerForNotifications];
-    NSString *deviceId=[[Device sharedInstance] deviceIdentifier];
-    [[RestAdapter sharedInstance] checkDeviceStatus:deviceId];
+    
+    
 }
 
 -(void)registerForNotifications{
@@ -58,7 +57,9 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     
-    
+    [self registerForNotifications];
+    NSString *deviceId=[[Device sharedInstance] deviceIdentifier];
+    [[RestAdapter sharedInstance] checkDeviceStatus:deviceId];
     
 }
 
@@ -117,7 +118,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     
-    if ([[segue identifier] isEqualToString:@"devInfoSegueE"])
+    if ([[segue identifier] isEqualToString:@"devInfoSegue"])
     {
         
         DeviceInfoViewController *vc = [segue destinationViewController];
@@ -149,7 +150,7 @@
         case DeviceAvailable:
         {
             [self.mainButton setImage:[UIImage imageNamed:@"available"] forState:UIControlStateNormal];
-            self.headLineLabel.text=@"Available";
+            self.headLineLabel.text=@"Device Available";
             self.statusLabel.text=@"Select the button above to check out device";
             self.usageHoursLabel.hidden=YES;
             if (self.usageTimer != nil) {
@@ -170,6 +171,7 @@
             NSLocale *posix = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
             [dateFormat setLocale:posix];
             self.lastUpdated = [dateFormat dateFromString:self.device.lastUpdated_at];
+            NSLog(@"last updated:%@",self.lastUpdated);
             self.usageHoursLabel.hidden=NO;
             self.usageTimer=[NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(timerTick:) userInfo:nil repeats:YES];
             
@@ -213,7 +215,7 @@
             break;
         case DeviceCheckedOut:
         {
-            [[RestAdapter sharedInstance] updateDeviceForUser:@"admin" withStatus:@"available"];
+            [self alertForCheckIn];
         }
             break;
         default:
@@ -268,6 +270,31 @@
     
     [alert showSuccess:self title:@"Check Out" subTitle:@"Enter Id of user checking out" closeButtonTitle:@"Cancel" duration:0.0f];
     
+}
+
+-(void)alertForCheckIn{
+    
+    SCLAlertView *alert = [[SCLAlertView alloc] init];
+    [alert setHorizontalButtons:YES];
+    alert.shouldDismissOnTapOutside = YES;
+    alert.backgroundType=Blur;
+    alert.customViewColor=[UIColor flatGreenColor];
+    
+    
+    alert.attributedFormatBlock = ^NSAttributedString* (NSString *value)
+    {
+        NSMutableAttributedString *subTitle = [[NSMutableAttributedString alloc]initWithString:value];
+        NSRange redRange = [value rangeOfString:value options:NSCaseInsensitiveSearch];
+        [subTitle addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Avenir Next Condensed" size:17.0] range:redRange];
+        
+        return subTitle;
+    };
+    [alert addButton:@"Check In" actionBlock:^(void) {
+        NSLog(@"Second button tapped");
+        [[RestAdapter sharedInstance] updateDeviceForUser:@"admin" withStatus:@"available"];
+    }];
+    
+    [alert showSuccess:self title:@"Check In" subTitle:@"You are about to check in the device.Please confirm" closeButtonTitle:@"Cancel" duration:0.0f];
 }
 
 -(void)alertForUpdate{

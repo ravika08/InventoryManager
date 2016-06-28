@@ -56,7 +56,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6W-pv-3wD">
-                                            <rect key="frame" x="30" y="228" width="110" height="22"/>
+                                            <rect key="frame" x="30" y="222" width="110" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="110" id="Cod-DH-Z0Z"/>
                                             </constraints>
@@ -65,13 +65,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JpD-jm-NVA">
-                                            <rect key="frame" x="160" y="230" width="425" height="20"/>
+                                            <rect key="frame" x="160" y="224" width="425" height="20"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloud Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyd-z6-G5q">
-                                            <rect key="frame" x="30" y="258" width="110" height="22"/>
+                                            <rect key="frame" x="30" y="252" width="110" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="110" id="LKG-qo-iKR"/>
                                             </constraints>
@@ -80,13 +80,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vJN-Z3-0F0">
-                                            <rect key="frame" x="160" y="260" width="425" height="20"/>
+                                            <rect key="frame" x="160" y="254" width="425" height="20"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAk-kf-5L4">
-                                            <rect key="frame" x="30" y="288" width="110" height="22"/>
+                                            <rect key="frame" x="30" y="282" width="110" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="110" id="TXB-4r-iO1"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="WR9-EK-Sh3"/>
@@ -101,13 +101,13 @@
                                             </variation>
                                         </label>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Vm-q6-e7o">
-                                            <rect key="frame" x="160" y="290" width="49" height="20"/>
+                                            <rect key="frame" x="160" y="284" width="49" height="20"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iy7-0y-H5T">
-                                            <rect key="frame" x="30" y="318" width="110" height="22"/>
+                                            <rect key="frame" x="30" y="312" width="110" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="LF7-7k-5cz"/>
                                                 <constraint firstAttribute="width" constant="110" id="Nyf-3E-fFH"/>
@@ -122,13 +122,13 @@
                                             </variation>
                                         </label>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ko5-Xa-lHw">
-                                            <rect key="frame" x="160" y="320" width="49" height="20"/>
+                                            <rect key="frame" x="160" y="314" width="49" height="20"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen Resolution" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqs-0r-V1k">
-                                            <rect key="frame" x="30" y="348" width="110" height="22"/>
+                                            <rect key="frame" x="30" y="342" width="110" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="110" id="rXu-3I-o0l"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="xk5-uk-ATT"/>
@@ -143,13 +143,13 @@
                                             </variation>
                                         </label>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wbe-51-kYU">
-                                            <rect key="frame" x="160" y="350" width="49" height="20"/>
+                                            <rect key="frame" x="160" y="344" width="49" height="20"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMEI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odR-qO-nG4">
-                                            <rect key="frame" x="30" y="378" width="110" height="22"/>
+                                            <rect key="frame" x="30" y="372" width="110" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="Em3-21-L6j"/>
                                                 <constraint firstAttribute="width" constant="110" id="maj-PR-znU"/>
@@ -164,13 +164,13 @@
                                             </variation>
                                         </label>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G3p-0g-17E">
-                                            <rect key="frame" x="160" y="380" width="49" height="20"/>
+                                            <rect key="frame" x="160" y="374" width="49" height="20"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAC Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kob-wn-YHn">
-                                            <rect key="frame" x="30" y="408" width="110" height="22"/>
+                                            <rect key="frame" x="30" y="402" width="110" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="110" id="7u9-5x-ljz"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="a91-dl-hzw"/>
@@ -185,13 +185,13 @@
                                             </variation>
                                         </label>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Qx-e6-Bew">
-                                            <rect key="frame" x="160" y="410" width="49" height="20"/>
+                                            <rect key="frame" x="160" y="404" width="49" height="20"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serial No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peK-jd-jdx">
-                                            <rect key="frame" x="30" y="438" width="110" height="22"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Client" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peK-jd-jdx">
+                                            <rect key="frame" x="30" y="432" width="110" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="Mvx-Oz-RpC"/>
                                                 <constraint firstAttribute="width" constant="110" id="lpq-MN-oOY"/>
@@ -206,20 +206,41 @@
                                             </variation>
                                         </label>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Pu-Pt-pOr">
-                                            <rect key="frame" x="160" y="440" width="49" height="20"/>
+                                            <rect key="frame" x="160" y="434" width="49" height="20"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asset ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhd-M9-qzx">
+                                            <rect key="frame" x="30" y="462" width="110" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="110" id="UIj-O1-VG4"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="pJg-uR-NTA"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="pJg-uR-NTA"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="apd-Kg-Aqd">
+                                            <rect key="frame" x="160" y="464" width="49" height="20"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cognizant Technology Solutions 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cp-Az-rMw">
-                                            <rect key="frame" x="10" y="560" width="580" height="20"/>
+                                            <rect key="frame" x="10" y="565" width="580" height="20"/>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGI-6R-wje">
-                                            <rect key="frame" x="30" y="506" width="540" height="34"/>
-                                            <color key="backgroundColor" red="0.23018704354763031" green="0.77713233232498169" blue="0.3158949613571167" alpha="1" colorSpace="calibratedRGB"/>
+                                            <rect key="frame" x="30" y="519" width="540" height="34"/>
+                                            <color key="backgroundColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="16"/>
                                             <color key="tintColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                                             <state key="normal" title="Enroll"/>
@@ -233,7 +254,7 @@
                                         <constraint firstItem="peK-jd-jdx" firstAttribute="top" secondItem="Kob-wn-YHn" secondAttribute="bottom" constant="8" id="3CR-YQ-HSw"/>
                                         <constraint firstItem="wbe-51-kYU" firstAttribute="baseline" secondItem="yqs-0r-V1k" secondAttribute="baseline" id="4Jn-zx-WVl"/>
                                         <constraint firstItem="if9-DI-vlz" firstAttribute="leading" secondItem="bz9-m6-Zdc" secondAttribute="trailing" constant="20" id="523-Z5-7Hg"/>
-                                        <constraint firstItem="K6W-pv-3wD" firstAttribute="top" secondItem="bz9-m6-Zdc" secondAttribute="bottom" constant="15" id="6p4-Bf-Rk6"/>
+                                        <constraint firstItem="K6W-pv-3wD" firstAttribute="top" secondItem="bz9-m6-Zdc" secondAttribute="bottom" constant="9" id="6p4-Bf-Rk6"/>
                                         <constraint firstItem="G3p-0g-17E" firstAttribute="baseline" secondItem="odR-qO-nG4" secondAttribute="baseline" id="762-sv-IZ7"/>
                                         <constraint firstItem="3cp-Az-rMw" firstAttribute="leading" secondItem="UaK-9j-dMr" secondAttribute="leading" constant="10" id="7dn-5P-uDN"/>
                                         <constraint firstAttribute="trailing" secondItem="gGI-6R-wje" secondAttribute="trailing" constant="30" id="7rq-YJ-ekb"/>
@@ -246,10 +267,14 @@
                                         <constraint firstItem="bz9-m6-Zdc" firstAttribute="top" secondItem="UaK-9j-dMr" secondAttribute="top" constant="85" id="Fy5-0x-doE"/>
                                         <constraint firstItem="Kob-wn-YHn" firstAttribute="top" secondItem="odR-qO-nG4" secondAttribute="bottom" constant="8" id="GNd-Q5-kgF"/>
                                         <constraint firstItem="ko5-Xa-lHw" firstAttribute="baseline" secondItem="Iy7-0y-H5T" secondAttribute="baseline" id="HAk-dd-pY4"/>
+                                        <constraint firstItem="xhd-M9-qzx" firstAttribute="leading" secondItem="UaK-9j-dMr" secondAttribute="leading" constant="30" id="HIv-NK-czE"/>
                                         <constraint firstItem="wbe-51-kYU" firstAttribute="leading" secondItem="yqs-0r-V1k" secondAttribute="trailing" constant="20" id="Ioe-k8-cn1"/>
                                         <constraint firstAttribute="trailing" secondItem="vJN-Z3-0F0" secondAttribute="trailing" constant="15" id="J0J-t1-kGD"/>
                                         <constraint firstItem="K6W-pv-3wD" firstAttribute="leading" secondItem="UaK-9j-dMr" secondAttribute="leading" constant="30" id="JWt-Hi-B1l"/>
+                                        <constraint firstItem="xhd-M9-qzx" firstAttribute="top" secondItem="peK-jd-jdx" secondAttribute="bottom" constant="8" id="KTW-rp-Mv6"/>
+                                        <constraint firstItem="apd-Kg-Aqd" firstAttribute="baseline" secondItem="xhd-M9-qzx" secondAttribute="baseline" id="MM5-lc-wBu"/>
                                         <constraint firstItem="vJN-Z3-0F0" firstAttribute="baseline" secondItem="Kyd-z6-G5q" secondAttribute="baseline" id="Me1-Vf-Pra"/>
+                                        <constraint firstItem="apd-Kg-Aqd" firstAttribute="leading" secondItem="xhd-M9-qzx" secondAttribute="trailing" constant="20" id="MfO-4b-jv7"/>
                                         <constraint firstItem="vJN-Z3-0F0" firstAttribute="leading" secondItem="Kyd-z6-G5q" secondAttribute="trailing" constant="15" id="O66-Z7-5HJ"/>
                                         <constraint firstItem="if9-DI-vlz" firstAttribute="top" secondItem="UaK-9j-dMr" secondAttribute="top" constant="95" id="RV8-9D-vYL"/>
                                         <constraint firstItem="ko5-Xa-lHw" firstAttribute="leading" secondItem="Iy7-0y-H5T" secondAttribute="trailing" constant="20" id="RhV-wZ-oSh"/>
@@ -259,10 +284,11 @@
                                         <constraint firstItem="0Vm-q6-e7o" firstAttribute="baseline" secondItem="JAk-kf-5L4" secondAttribute="baseline" id="aq2-3I-sfA"/>
                                         <constraint firstItem="Iy7-0y-H5T" firstAttribute="leading" secondItem="UaK-9j-dMr" secondAttribute="leading" constant="30" id="azi-SU-ni3"/>
                                         <constraint firstAttribute="trailing" secondItem="JAk-kf-5L4" secondAttribute="trailing" constant="515" id="cgy-No-eSe"/>
-                                        <constraint firstItem="3cp-Az-rMw" firstAttribute="top" secondItem="gGI-6R-wje" secondAttribute="bottom" constant="20" id="e0k-5v-avv"/>
+                                        <constraint firstItem="3cp-Az-rMw" firstAttribute="top" secondItem="gGI-6R-wje" secondAttribute="bottom" constant="12" id="e0k-5v-avv"/>
                                         <constraint firstItem="0Qx-e6-Bew" firstAttribute="leading" secondItem="Kob-wn-YHn" secondAttribute="trailing" constant="20" id="eCx-FZ-xbg"/>
                                         <constraint firstItem="Kyd-z6-G5q" firstAttribute="leading" secondItem="UaK-9j-dMr" secondAttribute="leading" constant="30" id="ecU-Il-Cc4"/>
                                         <constraint firstItem="yqs-0r-V1k" firstAttribute="leading" secondItem="UaK-9j-dMr" secondAttribute="leading" constant="30" id="evQ-Ik-pj8"/>
+                                        <constraint firstItem="apd-Kg-Aqd" firstAttribute="baseline" secondItem="xhd-M9-qzx" secondAttribute="baseline" id="fNb-2T-Svx"/>
                                         <constraint firstItem="gGI-6R-wje" firstAttribute="leading" secondItem="UaK-9j-dMr" secondAttribute="leading" constant="30" id="far-WI-afM"/>
                                         <constraint firstAttribute="trailing" secondItem="JpD-jm-NVA" secondAttribute="trailing" constant="15" id="gda-Nh-Pqt"/>
                                         <constraint firstItem="odR-qO-nG4" firstAttribute="leading" secondItem="UaK-9j-dMr" secondAttribute="leading" constant="30" id="hQJ-BC-UsV"/>
@@ -271,11 +297,12 @@
                                         <constraint firstItem="Kob-wn-YHn" firstAttribute="leading" secondItem="UaK-9j-dMr" secondAttribute="leading" constant="30" id="jj2-Tf-3Hw"/>
                                         <constraint firstItem="Iy7-0y-H5T" firstAttribute="top" secondItem="JAk-kf-5L4" secondAttribute="bottom" constant="8" id="k0y-lv-Q8Z"/>
                                         <constraint firstItem="hRq-Mg-ELe" firstAttribute="top" secondItem="qBU-sb-oEV" secondAttribute="bottom" constant="8" id="k7g-SB-2is"/>
-                                        <constraint firstAttribute="bottom" secondItem="3cp-Az-rMw" secondAttribute="bottom" constant="20" id="klA-HU-5gz"/>
+                                        <constraint firstAttribute="bottom" secondItem="3cp-Az-rMw" secondAttribute="bottom" constant="15" id="klA-HU-5gz"/>
                                         <constraint firstItem="0Vm-q6-e7o" firstAttribute="leading" secondItem="JAk-kf-5L4" secondAttribute="trailing" constant="20" id="kmW-Oj-Pl9"/>
                                         <constraint firstItem="yqs-0r-V1k" firstAttribute="top" secondItem="Iy7-0y-H5T" secondAttribute="bottom" constant="8" id="n5B-G9-6nZ"/>
                                         <constraint firstItem="JpD-jm-NVA" firstAttribute="leading" secondItem="K6W-pv-3wD" secondAttribute="trailing" constant="20" id="nE6-Wz-qaq"/>
                                         <constraint firstItem="0Qx-e6-Bew" firstAttribute="baseline" secondItem="Kob-wn-YHn" secondAttribute="baseline" id="poJ-Xc-LcB"/>
+                                        <constraint firstItem="apd-Kg-Aqd" firstAttribute="leading" secondItem="xhd-M9-qzx" secondAttribute="trailing" constant="20" id="rNs-hl-jrV"/>
                                         <constraint firstItem="bz9-m6-Zdc" firstAttribute="leading" secondItem="UaK-9j-dMr" secondAttribute="leading" constant="10" id="rQo-vX-29D"/>
                                         <constraint firstItem="JAk-kf-5L4" firstAttribute="leading" secondItem="UaK-9j-dMr" secondAttribute="leading" constant="30" id="tFO-Sf-cjJ"/>
                                         <constraint firstItem="qBU-sb-oEV" firstAttribute="top" secondItem="if9-DI-vlz" secondAttribute="bottom" constant="8" id="u4A-Br-nFu"/>
@@ -318,7 +345,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="assetIDTextField" destination="apd-Kg-Aqd" id="AKS-eL-SG2"/>
                         <outlet property="categoryTextField" destination="0Vm-q6-e7o" id="Rmb-Ft-OX6"/>
+                        <outlet property="clientTextField" destination="3Pu-Pt-pOr" id="hwg-fA-XwT"/>
+                        <outlet property="cloudTypeTextField" destination="vJN-Z3-0F0" id="JpQ-zn-8oO"/>
                         <outlet property="deviceIDTextField" destination="ko5-Xa-lHw" id="Xys-1T-sst"/>
                         <outlet property="imeiTextField" destination="G3p-0g-17E" id="qMJ-bg-ugB"/>
                         <outlet property="locationTextField" destination="JpD-jm-NVA" id="xy7-JU-u1O"/>
@@ -326,7 +356,6 @@
                         <outlet property="makeModelLabel" destination="if9-DI-vlz" id="PlO-h8-K9x"/>
                         <outlet property="osVersionLabel" destination="qBU-sb-oEV" id="cOn-7J-0n5"/>
                         <outlet property="screeresolutionTextField" destination="wbe-51-kYU" id="OxX-yp-wTO"/>
-                        <outlet property="serialNoTextField" destination="3Pu-Pt-pOr" id="35g-GD-zRW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzI-na-yTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>

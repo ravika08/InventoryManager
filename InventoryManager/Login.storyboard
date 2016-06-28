@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8oM-Gd-cjd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8oM-Gd-cjd">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Inventory Manager-->
+        <!--Asset Tracker Manager-->
         <scene sceneID="fJQ-EQ-hw1">
             <objects>
                 <viewController id="Abc-yQ-o4k" customClass="LoginViewController" sceneMemberID="viewController">
@@ -34,7 +34,7 @@
                                                 <constraint firstAttribute="height" constant="150" id="dj3-Lg-Y8f"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inventory Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhQ-Us-mC4">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asset Tracker Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhQ-Us-mC4">
                                             <rect key="frame" x="15" y="190" width="570" height="40"/>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="29"/>
                                             <color key="textColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
@@ -76,8 +76,16 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cognizant_Logo.svg" translatesAutoresizingMaskIntoConstraints="NO" id="IX1-Wb-EWe">
+                                            <rect key="frame" x="285" y="463" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="j32-RH-qPp"/>
+                                                <constraint firstAttribute="width" constant="30" id="rYJ-Ab-xol"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="IX1-Wb-EWe" firstAttribute="centerX" secondItem="CCw-fE-WDO" secondAttribute="centerX" id="60T-IF-sQW"/>
                                         <constraint firstItem="FRg-zU-WAW" firstAttribute="centerX" secondItem="CCw-fE-WDO" secondAttribute="centerX" id="8mW-PN-78s"/>
                                         <constraint firstItem="S1G-sW-Job" firstAttribute="top" secondItem="kde-Kv-Qel" secondAttribute="bottom" constant="10" id="AtM-Zm-92w"/>
                                         <constraint firstAttribute="trailing" secondItem="hhQ-Us-mC4" secondAttribute="trailing" constant="15" id="BjT-8Z-nMO"/>
@@ -89,6 +97,7 @@
                                         <constraint firstItem="FRg-zU-WAW" firstAttribute="top" secondItem="CCw-fE-WDO" secondAttribute="top" constant="25" id="V2c-4m-H1n"/>
                                         <constraint firstAttribute="bottom" secondItem="kSA-Nt-0Eo" secondAttribute="bottom" constant="20" id="d6r-eF-xcv"/>
                                         <constraint firstItem="hhQ-Us-mC4" firstAttribute="leading" secondItem="CCw-fE-WDO" secondAttribute="leading" constant="15" id="dvO-fJ-LdP"/>
+                                        <constraint firstItem="kSA-Nt-0Eo" firstAttribute="top" secondItem="IX1-Wb-EWe" secondAttribute="bottom" constant="3" id="gqB-9S-VZ0"/>
                                         <constraint firstItem="hhQ-Us-mC4" firstAttribute="top" secondItem="FRg-zU-WAW" secondAttribute="bottom" constant="15" id="iCA-rk-eZf"/>
                                         <constraint firstItem="kde-Kv-Qel" firstAttribute="centerX" secondItem="CCw-fE-WDO" secondAttribute="centerX" id="nJw-XE-LJ6"/>
                                         <constraint firstItem="kSA-Nt-0Eo" firstAttribute="leading" secondItem="CCw-fE-WDO" secondAttribute="leading" constant="10" id="rBB-Kj-awZ"/>
@@ -110,7 +119,7 @@
                             <constraint firstItem="40Z-Nj-IW9" firstAttribute="top" secondItem="jvB-wD-Q2E" secondAttribute="bottom" id="hVY-cM-qOn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Inventory Manager" id="ZUt-Lo-6Ny"/>
+                    <navigationItem key="navigationItem" title="Asset Tracker Manager" id="ZUt-Lo-6Ny"/>
                     <connections>
                         <outlet property="passwordField" destination="S1G-sW-Job" id="aJw-Vf-HOP"/>
                         <outlet property="userIdField" destination="kde-Kv-Qel" id="5wI-Dr-SoU"/>
@@ -144,6 +153,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Cognizant_Logo.svg" width="980" height="515"/>
         <image name="images" width="225" height="225"/>
         <image name="logo" width="256" height="256"/>
     </resources>

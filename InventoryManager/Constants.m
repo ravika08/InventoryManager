@@ -7,3 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
+
+NSString * const kServerURLKey = @"serverURL";
+NSString * const kDefaultServerURL = @"http://localhost";

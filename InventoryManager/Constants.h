@@ -10,4 +10,8 @@
 #define Constants_h
 
 
+extern NSString * const kServerURLKey;
+extern NSString * const kDefaultServerURL;
+
+
 #endif /* Constants_h */

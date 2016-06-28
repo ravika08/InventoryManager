@@ -14,8 +14,15 @@
 @property IBOutlet UIImageView *qrCodeImage;
 @property IBOutlet UILabel *deviceIDLabel;
 @property IBOutlet UILabel *devInfoLabel;
-
+@property IBOutlet UILabel *devLocationLabel;
+@property IBOutlet UILabel *devCloudTypeLabel;
+@property IBOutlet UILabel *devClientLabel;
 @property IBOutlet UILabel *checkedOutLabel;
+
+
+-(IBAction)selectUpdateDevice:(id)sender;
+
+@property NSNotificationCenter *noteCenter;
 
 @property (nonatomic,strong) Device *device;
 @end

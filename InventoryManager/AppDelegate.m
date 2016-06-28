@@ -7,6 +7,7 @@
 //
 #import "EnrollDeviceDetailViewController.h"
 #import "AppDelegate.h"
+#import "Constants.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.isLoggedIn=FALSE;
+    [self initializeUserDefaults];
     if(!self.isLoggedIn){
       
         [self.window makeKeyAndVisible];
@@ -54,6 +56,35 @@
 
     
 }
+
+-(void)presentUpdateDeviceModal{
+    
+    [self.window makeKeyAndVisible];
+    
+    UIStoryboard *updateStoryBoard = [UIStoryboard storyboardWithName:@"Update" bundle:nil];
+    UIViewController *update = [updateStoryBoard instantiateInitialViewController];
+    update.modalPresentationStyle=UIModalPresentationFullScreen;
+    update.modalTransitionStyle=UIModalTransitionStyleCoverVertical;
+    [[self topViewController] presentViewController:update animated:YES completion:^{
+        
+    }];
+
+}
+
+-(void)initializeUserDefaults {
+    
+    NSDictionary *infoDictionary = [[NSBundle mainBundle]infoDictionary];
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    NSDictionary *appDefaults = @{kServerURLKey:kDefaultServerURL
+                                  };
+    [userDefaults registerDefaults:appDefaults];
+    [userDefaults synchronize];
+    
+    
+}
+
 
 - (UIViewController *)topViewController{
     return [self topViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
