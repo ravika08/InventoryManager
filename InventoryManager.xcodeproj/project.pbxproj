@@ -16,7 +16,6 @@
 		97637A411CE3C65A00973EAC /* InventoryManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97637A401CE3C65A00973EAC /* InventoryManagerTests.m */; };
 		97637A4C1CE3C65A00973EAC /* InventoryManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97637A4B1CE3C65A00973EAC /* InventoryManagerUITests.m */; };
 		97637A5C1CE519FD00973EAC /* DeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97637A5B1CE519FD00973EAC /* DeviceInfoViewController.m */; };
-		97637A601CE51ED700973EAC /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 97637A5F1CE51ED700973EAC /* UIDeviceHardware.m */; };
 		97637A641CE56C2A00973EAC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97637A631CE56C2A00973EAC /* Login.storyboard */; };
 		97637A661CE5708B00973EAC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97637A651CE5708B00973EAC /* LoginViewController.m */; };
 		977B60C71CEE1BE100225139 /* Enroll.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977B60C61CEE1BE100225139 /* Enroll.storyboard */; };
@@ -28,6 +27,7 @@
 		979C8B8E1D2220200066C95E /* Update.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979C8B8D1D2220200066C95E /* Update.storyboard */; };
 		979C8B901D2234040066C95E /* UpdateDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 979C8B8F1D2234040066C95E /* UpdateDeviceViewController.m */; };
 		979C8B931D22D69B0066C95E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 979C8B921D22D69B0066C95E /* Settings.bundle */; };
+		979C8B961D2376960066C95E /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 979C8B951D2376960066C95E /* UIDeviceHardware.m */; };
 		C89C2A232227B643129D0B3E /* libPods-InventoryManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 065A7D48D984C29F9DA1880C /* libPods-InventoryManager.a */; };
 /* End PBXBuildFile section */
 
@@ -70,8 +70,6 @@
 		97637A4D1CE3C65A00973EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97637A5B1CE519FD00973EAC /* DeviceInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoViewController.m; sourceTree = "<group>"; };
 		97637A5D1CE51A1300973EAC /* DeviceInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoViewController.h; sourceTree = "<group>"; };
-		97637A5E1CE51ED700973EAC /* UIDeviceHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIDeviceHardware.h; path = "../../../../Downloads/UIDeviceHardware-master/UIDeviceHardware.h"; sourceTree = "<group>"; };
-		97637A5F1CE51ED700973EAC /* UIDeviceHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIDeviceHardware.m; path = "../../../../Downloads/UIDeviceHardware-master/UIDeviceHardware.m"; sourceTree = "<group>"; };
 		97637A631CE56C2A00973EAC /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		97637A651CE5708B00973EAC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		97637A671CE5709F00973EAC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -90,6 +88,8 @@
 		979C8B8F1D2234040066C95E /* UpdateDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateDeviceViewController.m; sourceTree = "<group>"; };
 		979C8B911D22341E0066C95E /* UpdateDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateDeviceViewController.h; sourceTree = "<group>"; };
 		979C8B921D22D69B0066C95E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		979C8B941D2376960066C95E /* UIDeviceHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceHardware.h; sourceTree = "<group>"; };
+		979C8B951D2376960066C95E /* UIDeviceHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDeviceHardware.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,9 +228,9 @@
 		97C893241D08668A0025B2ED /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				97637A5E1CE51ED700973EAC /* UIDeviceHardware.h */,
+				979C8B941D2376960066C95E /* UIDeviceHardware.h */,
+				979C8B951D2376960066C95E /* UIDeviceHardware.m */,
 				977ED3E61CEA0F840036E5D1 /* RestAdapter.h */,
-				97637A5F1CE51ED700973EAC /* UIDeviceHardware.m */,
 				977ED3E41CEA0F750036E5D1 /* RestAdapter.m */,
 			);
 			name = Services;
@@ -322,7 +322,7 @@
 				TargetAttributes = {
 					97637A221CE3C65800973EAC = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = NK67TZ5RDP;
+						DevelopmentTeam = LSVVD8ZPH6;
 					};
 					97637A3B1CE3C65A00973EAC = {
 						CreatedOnToolsVersion = 7.2;
@@ -424,7 +424,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				97637A5C1CE519FD00973EAC /* DeviceInfoViewController.m in Sources */,
-				97637A601CE51ED700973EAC /* UIDeviceHardware.m in Sources */,
 				97637A661CE5708B00973EAC /* LoginViewController.m in Sources */,
 				977ED3EC1CEA15190036E5D1 /* Device.m in Sources */,
 				97637A2E1CE3C65900973EAC /* ViewController.m in Sources */,
@@ -433,6 +432,7 @@
 				97637A2B1CE3C65900973EAC /* AppDelegate.m in Sources */,
 				97637A281CE3C65800973EAC /* main.m in Sources */,
 				977ED3E51CEA0F750036E5D1 /* RestAdapter.m in Sources */,
+				979C8B961D2376960066C95E /* UIDeviceHardware.m in Sources */,
 				977B60C91CEE3DFE00225139 /* EnrollDeviceDetailViewController.m in Sources */,
 				977ED3E91CEA10480036E5D1 /* Constants.m in Sources */,
 			);
