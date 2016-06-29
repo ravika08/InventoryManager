@@ -14,8 +14,8 @@
 @implementation RestAdapter:NSObject
 
 
-NSString *const enrollApi=@"api/devices";
-NSString *const updateApi=@"api/devices";
+NSString *const enrollApi=@"/api/devices";
+NSString *const updateApi=@"/api/devices";
 NSString *const kDeviceStatusNotEnrolled=@"devicestatus.notEnrolled";
 NSString *const kDeviceStatusEnrolled=@"deviceStatus.Enrolled";
 NSString *const kDeviceUpdated=@"device.Updated";
@@ -53,7 +53,7 @@ NSString *const kDeviceKey = @"DeviceKey";
  *  @return NSMutableURLRequest
  */
 -(NSMutableURLRequest *)getRequestForURL:(NSString *)path{
-    NSString  *serverURL=[NSString stringWithFormat:@"%@:8080/",[[NSUserDefaults standardUserDefaults] objectForKey:kServerURLKey] ];
+    NSString  *serverURL=[[NSUserDefaults standardUserDefaults] objectForKey:kServerURLKey];
     NSLog(@"server:%@",serverURL);
     NSURL *url = [NSURL URLWithString:[serverURL stringByAppendingPathComponent:path]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
